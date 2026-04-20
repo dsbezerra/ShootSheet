@@ -1,0 +1,46 @@
+# Built output
+build/
+/captures/
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Local configuration
+local.properties
+*.local.properties
+
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/
+
+# Claude Code
+.claude/
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Keystore files (never commit!)
+*.jks
+*.keystore
+keystore.properties
+
+# Proguard mapping files
+*.map
+
+# Test results
+test-results/
+
+# Kotlin build cache
+.kotlin/

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezera (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Scenario Library</string>
+    <string name="home_subtitle">Camera settings for every situation</string>
+    <string name="search_placeholder">Search scenarios\u2026</string>
+    <string name="section_categories">Categories</string>
+    <!-- %1$s = the query that returned no results -->
+    <string name="search_no_results">No results for \"%1$s\"</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">Explore</string>
+    <string name="tab_favorites">Favorites</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">Favorites</string>
+    <string name="favorites_empty_title">No favorites yet</string>
+    <string name="favorites_empty_body">Tap the \u2665 on any cheat sheet to save it here for quick access in the field.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">Category</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">Camera Settings</string>
+    <string name="detail_camera_settings_hint">Tap any setting to see it on the lens</string>
+    <string name="detail_pro_tip_label">PRO TIP</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">Search</string>
+    <string name="cd_clear">Clear search</string>
+    <string name="cd_close">Close</string>
+    <string name="cd_info">More information</string>
+    <string name="cd_back">Navigate back</string>
+    <string name="cd_add_favorite">Add to favorites</string>
+    <string name="cd_remove_favorite">Remove from favorites</string>
+    <string name="cd_toggle_favorite">Toggle favorite</string>
+
+    <!-- Plural resources -->
+    <!-- %1$d = count -->
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d result</item>
+        <item quantity="other">%1$d results</item>
+    </plurals>
+
+    <!-- %1$d = scenario count shown inside a category card -->
+    <plurals name="category_scenario_count">
+        <item quantity="one">%1$d scenario</item>
+        <item quantity="other">%1$d scenarios</item>
+    </plurals>
+
+    <!-- %1$d = number of saved scenarios shown in the Favorites header -->
+    <plurals name="favorites_saved_count">
+        <item quantity="one">%1$d saved scenario</item>
+        <item quantity="other">%1$d saved scenarios</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">Portraits</string>
+    <string name="category_landscapes_label">Landscapes</string>
+    <string name="category_action_label">Action &amp; Sports</string>
+    <string name="category_night_label">Night &amp; Astro</string>
+    <string name="category_events_label">Events</string>
+    <string name="category_street_label">Street</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">Aperture (f-stop)</string>
+    <string name="tooltip_aperture_body">Controls depth of field and light intake. Lower f-numbers (f/1.4) = wide open = shallow focus + more light. Higher numbers (f/16) = small opening = deep focus + less light.</string>
+    <string name="tooltip_shutter_title">Shutter Speed</string>
+    <string name="tooltip_shutter_body">How long the sensor is exposed. Fast speeds (1/1000s) freeze motion. Slow speeds (1/30s) create blur. Below 1/60s handheld causes camera shake — use a tripod.</string>
+    <string name="tooltip_iso_title">ISO Sensitivity</string>
+    <string name="tooltip_iso_body">Amplifies the sensor signal. ISO 100 = clean, low noise. ISO 6400+ = bright but noisy/grainy. Always use the lowest ISO your scene allows.</string>
+    <string name="tooltip_wb_title">White Balance</string>
+    <string name="tooltip_wb_body">Adjusts the color temperature to make whites appear neutral. \"Cloudy\" warms the image (~6500K). \"Tungsten\" cools it (~3200K). Shooting RAW lets you change this later.</string>
+    <string name="tooltip_focus_title">Focus Mode</string>
+    <string name="tooltip_focus_body">Single AF (AF-S): locks focus when you half-press shutter — ideal for still subjects. Continuous AF (AF-C): constantly tracks a moving subject. Manual: you control focus precisely.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">Golden Hour Portraits</string>
+    <string name="scenario_golden_hour_subtitle">Warm, flattering light at sunrise/sunset</string>
+    <string name="scenario_golden_hour_tip">Position subject with sun behind them for a natural rim light. Use a reflector to fill shadows.</string>
+
+    <string name="scenario_indoor_natural_title">Indoor Natural Light</string>
+    <string name="scenario_indoor_natural_subtitle">Window-lit portrait sessions</string>
+    <string name="scenario_indoor_natural_tip">Place subject at 45° to the window (Rembrandt lighting). Turn off all artificial lights for clean color.</string>
+
+    <string name="scenario_studio_portrait_title">Studio Portraits</string>
+    <string name="scenario_studio_portrait_subtitle">Controlled lighting setups</string>
+    <string name="scenario_studio_portrait_tip">Sync shutter below flash sync speed (usually 1/200). Start with ISO 100 and adjust flash power.</string>
+
+    <string name="scenario_blue_hour_title">Blue Hour Landscapes</string>
+    <string name="scenario_blue_hour_subtitle">20–40 mins after sunset magic</string>
+    <string name="scenario_blue_hour_tip">Use a tripod and remote shutter. Tungsten WB amplifies the blue cast for a moody look.</string>
+
+    <string name="scenario_waterfall_title">Silky Waterfalls</string>
+    <string name="scenario_waterfall_subtitle">Long exposure water motion</string>
+    <string name="scenario_waterfall_tip">Use an ND filter in bright conditions. The \"cotton candy\" look appears around 1–2 sec exposures.</string>
+
+    <string name="scenario_golden_landscape_title">Golden Hour Landscapes</string>
+    <string name="scenario_golden_landscape_subtitle">Dramatic warm light on terrain</string>
+    <string name="scenario_golden_landscape_tip">Arrive 30 min before golden hour. Scout locations in advance — light changes in minutes.</string>
+
+    <string name="scenario_freeze_motion_title">Freeze Fast Motion</string>
+    <string name="scenario_freeze_motion_subtitle">Sharp action shots</string>
+    <string name="scenario_freeze_motion_tip">Use burst mode and pan with moving subjects. AI tracking AF makes a huge difference here.</string>
+
+    <string name="scenario_panning_title">Motion Blur Panning</string>
+    <string name="scenario_panning_subtitle">Speed blur with sharp subject</string>
+    <string name="scenario_panning_tip">Follow the subject smoothly and press shutter mid-swing. Takes practice — shoot bursts.</string>
+
+    <string name="scenario_sports_outdoor_title">Outdoor Sports</string>
+    <string name="scenario_sports_outdoor_subtitle">Daytime field &amp; court sports</string>
+    <string name="scenario_sports_outdoor_tip">Position yourself to shoot with the sun at your back. Use a long lens (200–600mm) for tight crops.</string>
+
+    <string name="scenario_milky_way_title">Milky Way</string>
+    <string name="scenario_milky_way_subtitle">Core of the galaxy on clear nights</string>
+    <string name="scenario_milky_way_tip">Use the \"500 rule\" — divide 500 by focal length = max seconds before star trails appear.</string>
+
+    <string name="scenario_city_night_title">City at Night</string>
+    <string name="scenario_city_night_subtitle">Urban nightscapes &amp; light trails</string>
+    <string name="scenario_city_night_tip">Wait for civil twilight — city lights + blue sky balance beautifully around 20 min after sunset.</string>
+
+    <string name="scenario_light_painting_title">Light Painting</string>
+    <string name="scenario_light_painting_subtitle">Creative long exposure with light tools</string>
+    <string name="scenario_light_painting_tip">Wear dark clothing so you don\'t appear in the shot. Use a small flashlight for detailed work.</string>
+
+    <string name="scenario_wedding_reception_title">Wedding Reception</string>
+    <string name="scenario_wedding_reception_subtitle">Indoor mixed lighting events</string>
+    <string name="scenario_wedding_reception_tip">Bounce flash off ceiling for natural-looking fill. Shoot RAW — mixed light is hard to nail in-camera.</string>
+
+    <string name="scenario_concert_title">Concert &amp; Live Music</string>
+    <string name="scenario_concert_subtitle">Stage lighting, fast performers</string>
+    <string name="scenario_concert_tip">Most venues allow cameras for the first 3 songs only. Scout the lighting during soundcheck.</string>
+
+    <string name="scenario_corporate_title">Corporate Events</string>
+    <string name="scenario_corporate_subtitle">Conferences, headshots, panels</string>
+    <string name="scenario_corporate_tip">Deliver images fast — clients often need social posts same-day. Cull aggressively in-field.</string>
+
+    <string name="scenario_sunny_street_title">Sunny Day Street</string>
+    <string name="scenario_sunny_street_subtitle">Bright urban daylight shooting</string>
+    <string name="scenario_sunny_street_tip">Sunny 16 rule: at f/16 on a sunny day, shutter = 1/ISO. Use \"zone focus\" to shoot from the hip.</string>
+
+    <string name="scenario_rainy_street_title">Rainy Day Street</string>
+    <string name="scenario_rainy_street_subtitle">Reflections &amp; moody wet scenes</string>
+    <string name="scenario_rainy_street_tip">Shoot low to capture puddle reflections. Overcast light is naturally soft — great for street color.</string>
+
+    <string name="scenario_night_street_title">Night Street</string>
+    <string name="scenario_night_street_subtitle">Neon signs, bars &amp; late city life</string>
+    <string name="scenario_night_street_tip">Embrace the grain. High ISO noise at night feels cinematic — expose for highlights, not shadows.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">Retry</string>
+    <string name="error_load_failed">Couldn\'t load data. Please try again.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">Aperture</string>
+    <string name="setting_shutter">Shutter Speed</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">White Balance</string>
+    <string name="setting_focus">Focus Mode</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">Cloudy</string>
+    <string name="wb_daylight">Daylight</string>
+    <string name="wb_flash_5500k">Flash / 5500K</string>
+    <string name="wb_tungsten_3200k">Tungsten / 3200K</string>
+    <string name="wb_shade_7000k">Shade / 7000K</string>
+    <string name="wb_auto">Auto</string>
+    <string name="wb_auto_3500k">Auto / 3500K</string>
+    <string name="wb_fluorescent_4200k">Fluorescent / 4200K</string>
+    <string name="wb_tungsten_2700k">Tungsten / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">Single AF</string>
+    <string name="focus_manual_inf">Manual / ∞</string>
+    <string name="focus_manual">Manual</string>
+    <string name="focus_continuous_af">Continuous AF</string>
+    <string name="focus_zone_pre">Zone / Pre-focus</string>
+</resources>

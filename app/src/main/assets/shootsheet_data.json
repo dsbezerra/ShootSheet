@@ -1,0 +1,322 @@
+{
+  "categories": [
+    {
+      "id": "portraits",
+      "labelRes": "category_portraits_label",
+      "color": "#FFD180"
+    },
+    {
+      "id": "landscapes",
+      "labelRes": "category_landscapes_label",
+      "color": "#80D8FF"
+    },
+    {
+      "id": "action",
+      "labelRes": "category_action_label",
+      "color": "#FF8A80"
+    },
+    {
+      "id": "night",
+      "labelRes": "category_night_label",
+      "color": "#B39DDB"
+    },
+    {
+      "id": "events",
+      "labelRes": "category_events_label",
+      "color": "#A5D6A7"
+    },
+    {
+      "id": "street",
+      "labelRes": "category_street_label",
+      "color": "#B0BEC5"
+    }
+  ],
+  "scenarios": {
+    "portraits": [
+      {
+        "id": "golden-hour",
+        "titleRes": "scenario_golden_hour_title",
+        "subtitleRes": "scenario_golden_hour_subtitle",
+        "settings": {
+          "aperture": "f/1.8 – f/4",
+          "shutter": "1/100 – 1/500",
+          "iso": "100 – 400",
+          "wbRes": "wb_cloudy",
+          "focusRes": "focus_single_af"
+        },
+        "tipRes": "scenario_golden_hour_tip",
+        "categoryId": "portraits"
+      },
+      {
+        "id": "indoor-natural",
+        "titleRes": "scenario_indoor_natural_title",
+        "subtitleRes": "scenario_indoor_natural_subtitle",
+        "settings": {
+          "aperture": "f/1.4 – f/2.8",
+          "shutter": "1/60 – 1/200",
+          "iso": "400 – 1600",
+          "wbRes": "wb_daylight",
+          "focusRes": "focus_single_af"
+        },
+        "tipRes": "scenario_indoor_natural_tip",
+        "categoryId": "portraits"
+      },
+      {
+        "id": "studio-portrait",
+        "titleRes": "scenario_studio_portrait_title",
+        "subtitleRes": "scenario_studio_portrait_subtitle",
+        "settings": {
+          "aperture": "f/5.6 – f/11",
+          "shutter": "1/160 – 1/250",
+          "iso": "100 – 200",
+          "wbRes": "wb_flash_5500k",
+          "focusRes": "focus_single_af"
+        },
+        "tipRes": "scenario_studio_portrait_tip",
+        "categoryId": "portraits"
+      }
+    ],
+    "landscapes": [
+      {
+        "id": "blue-hour",
+        "titleRes": "scenario_blue_hour_title",
+        "subtitleRes": "scenario_blue_hour_subtitle",
+        "settings": {
+          "aperture": "f/8 – f/11",
+          "shutter": "1 – 30 sec",
+          "iso": "100 – 400",
+          "wbRes": "wb_tungsten_3200k",
+          "focusRes": "focus_manual_inf"
+        },
+        "tipRes": "scenario_blue_hour_tip",
+        "categoryId": "landscapes"
+      },
+      {
+        "id": "waterfall",
+        "titleRes": "scenario_waterfall_title",
+        "subtitleRes": "scenario_waterfall_subtitle",
+        "settings": {
+          "aperture": "f/11 – f/16",
+          "shutter": "0.5 – 4 sec",
+          "iso": "50 – 100",
+          "wbRes": "wb_daylight",
+          "focusRes": "focus_manual"
+        },
+        "tipRes": "scenario_waterfall_tip",
+        "categoryId": "landscapes"
+      },
+      {
+        "id": "golden-landscape",
+        "titleRes": "scenario_golden_landscape_title",
+        "subtitleRes": "scenario_golden_landscape_subtitle",
+        "settings": {
+          "aperture": "f/8 – f/16",
+          "shutter": "1/125 – 1/500",
+          "iso": "100 – 200",
+          "wbRes": "wb_shade_7000k",
+          "focusRes": "focus_single_af"
+        },
+        "tipRes": "scenario_golden_landscape_tip",
+        "categoryId": "landscapes"
+      }
+    ],
+    "action": [
+      {
+        "id": "freeze-motion",
+        "titleRes": "scenario_freeze_motion_title",
+        "subtitleRes": "scenario_freeze_motion_subtitle",
+        "settings": {
+          "aperture": "f/2.8 – f/5.6",
+          "shutter": "1/1000 – 1/4000",
+          "iso": "400 – 3200",
+          "wbRes": "wb_auto",
+          "focusRes": "focus_continuous_af"
+        },
+        "tipRes": "scenario_freeze_motion_tip",
+        "categoryId": "action"
+      },
+      {
+        "id": "panning",
+        "titleRes": "scenario_panning_title",
+        "subtitleRes": "scenario_panning_subtitle",
+        "settings": {
+          "aperture": "f/8 – f/16",
+          "shutter": "1/15 – 1/60",
+          "iso": "50 – 200",
+          "wbRes": "wb_auto",
+          "focusRes": "focus_continuous_af"
+        },
+        "tipRes": "scenario_panning_tip",
+        "categoryId": "action"
+      },
+      {
+        "id": "sports-outdoor",
+        "titleRes": "scenario_sports_outdoor_title",
+        "subtitleRes": "scenario_sports_outdoor_subtitle",
+        "settings": {
+          "aperture": "f/4 – f/6.3",
+          "shutter": "1/1000 – 1/2000",
+          "iso": "100 – 800",
+          "wbRes": "wb_daylight",
+          "focusRes": "focus_continuous_af"
+        },
+        "tipRes": "scenario_sports_outdoor_tip",
+        "categoryId": "action"
+      }
+    ],
+    "night": [
+      {
+        "id": "milky-way",
+        "titleRes": "scenario_milky_way_title",
+        "subtitleRes": "scenario_milky_way_subtitle",
+        "settings": {
+          "aperture": "f/1.4 – f/2.8",
+          "shutter": "15 – 25 sec",
+          "iso": "1600 – 6400",
+          "wbRes": "wb_auto",
+          "focusRes": "focus_manual_inf"
+        },
+        "tipRes": "scenario_milky_way_tip",
+        "categoryId": "night"
+      },
+      {
+        "id": "city-night",
+        "titleRes": "scenario_city_night_title",
+        "subtitleRes": "scenario_city_night_subtitle",
+        "settings": {
+          "aperture": "f/8 – f/16",
+          "shutter": "10 – 30 sec",
+          "iso": "100 – 400",
+          "wbRes": "wb_tungsten_2700k",
+          "focusRes": "focus_manual"
+        },
+        "tipRes": "scenario_city_night_tip",
+        "categoryId": "night"
+      },
+      {
+        "id": "light-painting",
+        "titleRes": "scenario_light_painting_title",
+        "subtitleRes": "scenario_light_painting_subtitle",
+        "settings": {
+          "aperture": "f/8 – f/11",
+          "shutter": "10 – 60 sec",
+          "iso": "100 – 200",
+          "wbRes": "wb_daylight",
+          "focusRes": "focus_manual"
+        },
+        "tipRes": "scenario_light_painting_tip",
+        "categoryId": "night"
+      }
+    ],
+    "events": [
+      {
+        "id": "wedding-reception",
+        "titleRes": "scenario_wedding_reception_title",
+        "subtitleRes": "scenario_wedding_reception_subtitle",
+        "settings": {
+          "aperture": "f/1.8 – f/4",
+          "shutter": "1/80 – 1/200",
+          "iso": "800 – 3200",
+          "wbRes": "wb_auto_3500k",
+          "focusRes": "focus_continuous_af"
+        },
+        "tipRes": "scenario_wedding_reception_tip",
+        "categoryId": "events"
+      },
+      {
+        "id": "concert",
+        "titleRes": "scenario_concert_title",
+        "subtitleRes": "scenario_concert_subtitle",
+        "settings": {
+          "aperture": "f/1.4 – f/2.8",
+          "shutter": "1/125 – 1/500",
+          "iso": "1600 – 12800",
+          "wbRes": "wb_auto",
+          "focusRes": "focus_continuous_af"
+        },
+        "tipRes": "scenario_concert_tip",
+        "categoryId": "events"
+      },
+      {
+        "id": "corporate",
+        "titleRes": "scenario_corporate_title",
+        "subtitleRes": "scenario_corporate_subtitle",
+        "settings": {
+          "aperture": "f/2.8 – f/5.6",
+          "shutter": "1/100 – 1/250",
+          "iso": "400 – 1600",
+          "wbRes": "wb_fluorescent_4200k",
+          "focusRes": "focus_single_af"
+        },
+        "tipRes": "scenario_corporate_tip",
+        "categoryId": "events"
+      }
+    ],
+    "street": [
+      {
+        "id": "sunny-street",
+        "titleRes": "scenario_sunny_street_title",
+        "subtitleRes": "scenario_sunny_street_subtitle",
+        "settings": {
+          "aperture": "f/8 – f/11",
+          "shutter": "1/500 – 1/1000",
+          "iso": "100 – 200",
+          "wbRes": "wb_daylight",
+          "focusRes": "focus_zone_pre"
+        },
+        "tipRes": "scenario_sunny_street_tip",
+        "categoryId": "street"
+      },
+      {
+        "id": "rainy-street",
+        "titleRes": "scenario_rainy_street_title",
+        "subtitleRes": "scenario_rainy_street_subtitle",
+        "settings": {
+          "aperture": "f/2 – f/5.6",
+          "shutter": "1/125 – 1/500",
+          "iso": "400 – 1600",
+          "wbRes": "wb_cloudy",
+          "focusRes": "focus_continuous_af"
+        },
+        "tipRes": "scenario_rainy_street_tip",
+        "categoryId": "street"
+      },
+      {
+        "id": "night-street",
+        "titleRes": "scenario_night_street_title",
+        "subtitleRes": "scenario_night_street_subtitle",
+        "settings": {
+          "aperture": "f/1.4 – f/2",
+          "shutter": "1/60 – 1/125",
+          "iso": "1600 – 6400",
+          "wbRes": "wb_auto",
+          "focusRes": "focus_single_af"
+        },
+        "tipRes": "scenario_night_street_tip",
+        "categoryId": "street"
+      }
+    ]
+  },
+  "tooltips": {
+    "APERTURE": {
+      "titleRes": "tooltip_aperture_title",
+      "bodyRes": "tooltip_aperture_body"
+    },
+    "SHUTTER": {
+      "titleRes": "tooltip_shutter_title",
+      "bodyRes": "tooltip_shutter_body"
+    },
+    "ISO": {
+      "titleRes": "tooltip_iso_title",
+      "bodyRes": "tooltip_iso_body"
+    },
+    "WB": {
+      "titleRes": "tooltip_wb_title",
+      "bodyRes": "tooltip_wb_body"
+    },
+    "FOCUS": {
+      "titleRes": "tooltip_focus_title",
+      "bodyRes": "tooltip_focus_body"
+    }
+  }
+}
