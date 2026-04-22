@@ -125,7 +125,6 @@ fun HomeScreen(
   DSScaffold(
     modifier = modifier,
     topBar = {
-      // ── Header ───────────────────────────────────────────────────────
       Column(modifier = Modifier.padding(horizontal = spacing.screenHorizontal, vertical = spacing.xxl)) {
         Text(
           text = stringResource(R.string.app_eyebrow),
@@ -146,7 +145,6 @@ fun HomeScreen(
         )
       }
 
-      // ── Search ───────────────────────────────────────────────────────
       Row(
         modifier = Modifier
           .padding(horizontal = spacing.screenHorizontal)
@@ -198,7 +196,7 @@ fun HomeScreen(
         }
       }
 
-      // ── Section label ─────────────────────────────────────────────────
+      Spacer(Modifier.height(spacing.md))
       Text(
         text = if (state.searchQuery.isNotBlank()) {
           pluralStringResource(R.plurals.search_results_count, state.filteredCategories.size, state.filteredCategories.size)
@@ -209,10 +207,9 @@ fun HomeScreen(
         style = ShootSheetTextStyles.sectionLabel,
         modifier = Modifier.padding(horizontal = spacing.screenHorizontal),
       )
-      Spacer(Modifier.height(spacing.lg))
+      Spacer(Modifier.height(spacing.sm))
     },
   ) {
-    // ── Category grid ─────────────────────────────────────────────────
     if (state.filteredCategories.isEmpty()) {
       Box(
         modifier = Modifier.fillMaxSize(),
