@@ -97,7 +97,7 @@ fun ScenarioCard(
           style = ShootSheetTextStyles.cardSubtitle,
         )
         Row(
-          modifier = Modifier.padding(top = spacing.md),
+          modifier = Modifier.padding(top = spacing.lg),
           horizontalArrangement = Arrangement.spacedBy(6.dp),
         ) {
           MiniChip(scenario.settings.aperture)
@@ -127,7 +127,7 @@ private fun MiniChip(value: String) {
     modifier = Modifier
       .clip(Shapes.chipSmall)
       .background(Surface2)
-      .padding(horizontal = 8.dp, vertical = 4.dp),
+      .padding(horizontal = 8.dp, vertical = 6.dp),
   ) {
     Text(
       text = value,

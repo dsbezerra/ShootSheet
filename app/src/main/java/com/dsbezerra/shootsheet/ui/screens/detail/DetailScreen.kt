@@ -217,7 +217,7 @@ private fun DetailContentPanel(
 
   Column(modifier = modifier) {
     // Title block
-    Column(modifier = Modifier.padding(horizontal = spacing.screenHorizontal, vertical = 10.dp)) {
+    Column(modifier = Modifier.padding(horizontal = spacing.screenHorizontal, vertical = spacing.lg)) {
       Box(
         modifier = Modifier
           .clip(Shapes.tag)
@@ -255,7 +255,7 @@ private fun DetailContentPanel(
         color = Accent,
         style = ShootSheetTextStyles.badgeLabel,
       )
-      Spacer(Modifier.height(14.dp))
+      Spacer(Modifier.height(spacing.lg))
       SettingsGrid(
         scenario = scenario,
         highlighted = highlighted,
@@ -285,7 +285,7 @@ private fun DetailContentPanel(
           color = Accent,
           style = ShootSheetTextStyles.badgeLabel,
         )
-        Spacer(Modifier.height(6.dp))
+        Spacer(Modifier.height(spacing.sm))
         Text(
           text = scenario.getTip(context),
           color = TextPrimary,
@@ -366,12 +366,13 @@ private fun SettingCell(
   modifier: Modifier = Modifier,
 ) {
   val context = LocalContext.current
+  val spacing = MaterialTheme.spacing
 
   Column(
     modifier = modifier
       .background(if (highlighted) AccentDim else Color.Transparent)
       .clickable(onClick = onTap)
-      .padding(horizontal = 12.dp, vertical = 14.dp),
+      .padding(horizontal = spacing.lg, vertical = spacing.xl),
     horizontalAlignment = Alignment.CenterHorizontally,
   ) {
     Text(
@@ -380,7 +381,7 @@ private fun SettingCell(
       style = ShootSheetTextStyles.settingValue,
       textAlign = TextAlign.Center,
     )
-    Spacer(Modifier.height(4.dp))
+    Spacer(Modifier.height(6.dp))
     Text(
       text = settingKey.getLabel(context).uppercase(),
       color = TextMuted,

@@ -43,7 +43,7 @@ fun DSHeader(
   Column(
     modifier = modifier.padding(
       horizontal = spacing.screenHorizontal,
-      vertical = spacing.lg,
+      vertical = spacing.xxl,
     ),
   ) {
     Text(
@@ -51,13 +51,13 @@ fun DSHeader(
       color = Accent,
       style = ShootSheetTextStyles.eyebrow,
     )
-    Spacer(Modifier.height(spacing.xs))
+    Spacer(Modifier.height(spacing.sm))
     Text(
       text = title,
       color = TextPrimary,
       style = ShootSheetTextStyles.screenTitle,
     )
-    Spacer(Modifier.height(spacing.xxs))
+    Spacer(Modifier.height(spacing.xs))
     if (subtitle != null) {
       Text(
         text = subtitle,

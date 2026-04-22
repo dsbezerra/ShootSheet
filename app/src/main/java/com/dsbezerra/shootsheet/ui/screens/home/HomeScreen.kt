@@ -126,19 +126,19 @@ fun HomeScreen(
     modifier = modifier,
     topBar = {
       // ── Header ───────────────────────────────────────────────────────
-      Column(modifier = Modifier.padding(horizontal = spacing.screenHorizontal, vertical = spacing.lg)) {
+      Column(modifier = Modifier.padding(horizontal = spacing.screenHorizontal, vertical = spacing.xxl)) {
         Text(
           text = stringResource(R.string.app_eyebrow),
           color = Accent,
           style = ShootSheetTextStyles.eyebrow,
         )
-        Spacer(Modifier.height(spacing.xs))
+        Spacer(Modifier.height(spacing.sm))
         Text(
           text = stringResource(R.string.home_title),
           color = TextPrimary,
           style = ShootSheetTextStyles.screenTitle,
         )
-        Spacer(Modifier.height(spacing.xxs))
+        Spacer(Modifier.height(spacing.xs))
         Text(
           text = stringResource(R.string.home_subtitle),
           color = TextSub,
@@ -209,7 +209,7 @@ fun HomeScreen(
         style = ShootSheetTextStyles.sectionLabel,
         modifier = Modifier.padding(horizontal = spacing.screenHorizontal),
       )
-      Spacer(Modifier.height(spacing.md))
+      Spacer(Modifier.height(spacing.lg))
     },
   ) {
     // ── Category grid ─────────────────────────────────────────────────
@@ -236,9 +236,9 @@ fun HomeScreen(
       }
       LazyVerticalGrid(
         columns = GridCells.Fixed(gridColumns),
-        contentPadding = PaddingValues(horizontal = spacing.screenHorizontal, vertical = spacing.xs),
-        horizontalArrangement = Arrangement.spacedBy(10.dp),
-        verticalArrangement = Arrangement.spacedBy(10.dp),
+        contentPadding = PaddingValues(horizontal = spacing.screenHorizontal, vertical = spacing.sm),
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
         modifier = Modifier.fillMaxSize(),
       ) {
         items(state.filteredCategories, key = { it.id }) { cat ->

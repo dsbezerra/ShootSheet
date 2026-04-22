@@ -41,10 +41,10 @@ val Typography =
  *   Text(text = "ShootSheet", style = ShootSheetTextStyles.eyebrow, color = Accent)
  */
 object ShootSheetTextStyles {
-  /** Uppercase eyebrow above screen titles — 11sp Medium, wide tracking. */
+  /** Uppercase eyebrow above screen titles — 12sp Medium, wide tracking. */
   val eyebrow =
     TextStyle(
-      fontSize = 11.sp,
+      fontSize = 12.sp,
       fontWeight = FontWeight.Medium,
       letterSpacing = 1.sp,
     )
@@ -56,13 +56,13 @@ object ShootSheetTextStyles {
       fontWeight = FontWeight.Bold,
     )
 
-  /** Secondary screen subtitle / description — 13sp Regular. */
-  val screenSubtitle = TextStyle(fontSize = 13.sp)
+  /** Secondary screen subtitle / description — 14sp Regular. */
+  val screenSubtitle = TextStyle(fontSize = 14.sp)
 
-  /** Section heading ("Categories", "2 results") — 12sp SemiBold, wide tracking. */
+  /** Section heading ("Categories", "2 results") — 13sp SemiBold, wide tracking. */
   val sectionLabel =
     TextStyle(
-      fontSize = 12.sp,
+      fontSize = 13.sp,
       fontWeight = FontWeight.SemiBold,
       letterSpacing = 0.8.sp,
     )
@@ -74,8 +74,8 @@ object ShootSheetTextStyles {
       fontWeight = FontWeight.SemiBold,
     )
 
-  /** Scenario/list card secondary subtitle — 13sp Regular. */
-  val cardSubtitle = TextStyle(fontSize = 13.sp)
+  /** Scenario/list card secondary subtitle — 14sp Regular. */
+  val cardSubtitle = TextStyle(fontSize = 14.sp)
 
   /** Category card name — 14sp SemiBold. */
   val categoryLabel =
@@ -84,20 +84,20 @@ object ShootSheetTextStyles {
       fontWeight = FontWeight.SemiBold,
     )
 
-  /** Category card scenario count — 12sp Regular. */
-  val categoryCount = TextStyle(fontSize = 12.sp)
+  /** Category card scenario count — 13sp Regular. */
+  val categoryCount = TextStyle(fontSize = 13.sp)
 
-  /** Mini chip (aperture/shutter/ISO) — 12sp SemiBold. */
+  /** Mini chip (aperture/shutter/ISO) — 13sp SemiBold. */
   val chipValue =
     TextStyle(
-      fontSize = 12.sp,
+      fontSize = 13.sp,
       fontWeight = FontWeight.SemiBold,
     )
 
-  /** Setting chip label (APERTURE, SHUTTER…) — 11sp Medium, tight tracking. */
+  /** Setting chip label (APERTURE, SHUTTER…) — 12sp Medium, tight tracking. */
   val settingLabel =
     TextStyle(
-      fontSize = 11.sp,
+      fontSize = 12.sp,
       fontWeight = FontWeight.Medium,
       letterSpacing = 0.08.sp,
     )
@@ -130,19 +130,19 @@ object ShootSheetTextStyles {
       fontWeight = FontWeight.SemiBold,
     )
 
-  /** Navigation tab label — 11sp Regular or SemiBold depending on active state. */
-  val navLabel = TextStyle(fontSize = 11.sp)
+  /** Navigation tab label — 12sp Regular or SemiBold depending on active state. */
+  val navLabel = TextStyle(fontSize = 12.sp)
 
-  /** PRO TIP / badge-style labels — 12sp SemiBold, moderate tracking. */
+  /** PRO TIP / badge-style labels — 13sp SemiBold, moderate tracking. */
   val badgeLabel =
     TextStyle(
-      fontSize = 12.sp,
+      fontSize = 13.sp,
       fontWeight = FontWeight.SemiBold,
       letterSpacing = 0.5.sp,
     )
 
-  /** Screen list header meta text ("Category") — 12sp Regular. */
-  val metaLabel = TextStyle(fontSize = 12.sp)
+  /** Screen list header meta text ("Category") — 13sp Regular. */
+  val metaLabel = TextStyle(fontSize = 13.sp)
 
   /** Screen list header title (category name in ScenarioListScreen) — 20sp Bold. */
   val listHeaderTitle =

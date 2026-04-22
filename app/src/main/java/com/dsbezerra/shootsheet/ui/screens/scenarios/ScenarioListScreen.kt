@@ -148,9 +148,9 @@ fun ScenarioListScreen(
             modifier = if (isExpanded) Modifier.align(Alignment.TopCenter).widthIn(max = 600.dp) else Modifier.fillMaxWidth(),
             contentPadding = PaddingValues(
                 horizontal = spacing.screenHorizontal,
-                vertical = spacing.xs,
+                vertical = spacing.sm,
             ),
-            verticalArrangement = Arrangement.spacedBy(10.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             items(state.scenarios, key = { it.id }) { scenario ->
                 ScenarioCard(
