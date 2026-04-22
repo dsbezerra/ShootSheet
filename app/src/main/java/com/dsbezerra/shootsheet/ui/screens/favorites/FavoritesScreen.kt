@@ -15,7 +15,6 @@
  */
 package com.dsbezerra.shootsheet.ui.screens.favorites
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -26,7 +25,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -47,11 +45,11 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.dsbezerra.shootsheet.R
 import com.dsbezerra.shootsheet.ui.components.DSHeader
+import com.dsbezerra.shootsheet.ui.components.DSScaffold
 import com.dsbezerra.shootsheet.ui.components.ScenarioCard
 import com.dsbezerra.shootsheet.ui.components.ScreenError
 import com.dsbezerra.shootsheet.ui.components.ScreenLoading
 import com.dsbezerra.shootsheet.ui.icons.ShootSheetIcons
-import com.dsbezerra.shootsheet.ui.theme.Bg
 import com.dsbezerra.shootsheet.ui.theme.ShootSheetTextStyles
 import com.dsbezerra.shootsheet.ui.theme.TextMuted
 import com.dsbezerra.shootsheet.ui.theme.TextPrimary
@@ -91,27 +89,37 @@ fun FavoritesScreen(
   val spacing = MaterialTheme.spacing
   val isExpanded = windowWidthClass == WindowWidthClass.Expanded
 
-  Column(
-    modifier = modifier
-      .fillMaxSize()
-      .background(Bg)
-      .statusBarsPadding(),
-    horizontalAlignment = Alignment.CenterHorizontally,
-  ) {
-    if (state.isLoading) {
-      ScreenLoading(modifier = modifier)
-      return
-    }
+  if (state.isLoading) {
+    ScreenLoading(modifier = modifier)
+    return
+  }
 
-    val errorMsg = state.error
-    if (errorMsg != null) {
-      ScreenError(
-        message = errorMsg,
-        onRetry = { onEvent(FavoritesEvent.OnRetry) },
-        modifier = modifier,
-      )
-      return
-    }
+  val errorMsg = state.error
+  if (errorMsg != null) {
+    ScreenError(
+      message = errorMsg,
+      onRetry = { onEvent(FavoritesEvent.OnRetry) },
+      modifier = modifier,
+    )
+    return
+  }
+
+  DSScaffold(
+    modifier = modifier,
+    topBar = {
+      if (state.favorites.isNotEmpty()) {
+        DSHeader(
+          title = stringResource(R.string.favorites_title),
+          subtitle = pluralStringResource(
+            id = R.plurals.favorites_saved_count,
+            count = state.favorites.size,
+            state.favorites.size,
+          ),
+          modifier = Modifier.fillMaxWidth(),
+        )
+      }
+    },
+  ) {
     if (state.favorites.isEmpty()) {
       Box(
         modifier = Modifier.fillMaxSize(),
@@ -143,17 +151,8 @@ fun FavoritesScreen(
         }
       }
     } else {
-      DSHeader(
-        title = stringResource(R.string.favorites_title),
-        subtitle = pluralStringResource(
-          id = R.plurals.favorites_saved_count,
-          count = state.favorites.size,
-          state.favorites.size,
-        ),
-        modifier = if (isExpanded) Modifier.widthIn(max = 600.dp) else Modifier.fillMaxWidth(),
-      )
       LazyColumn(
-        modifier = if (isExpanded) Modifier.widthIn(max = 600.dp) else Modifier.fillMaxWidth(),
+        modifier = if (isExpanded) Modifier.align(Alignment.TopCenter).widthIn(max = 600.dp) else Modifier.fillMaxWidth(),
         contentPadding = PaddingValues(
           horizontal = spacing.screenHorizontal,
           vertical = spacing.xs,

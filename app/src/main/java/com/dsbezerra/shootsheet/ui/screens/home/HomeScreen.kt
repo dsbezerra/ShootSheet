@@ -54,6 +54,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.dsbezerra.shootsheet.R
 import com.dsbezerra.shootsheet.ui.components.CategoryCard
+import com.dsbezerra.shootsheet.ui.components.DSScaffold
 import com.dsbezerra.shootsheet.ui.components.ScreenError
 import com.dsbezerra.shootsheet.ui.components.ScreenLoading
 import com.dsbezerra.shootsheet.ui.icons.ShootSheetIcons
@@ -106,112 +107,112 @@ fun HomeScreen(
   // Purely visual: drives the search field border color, not business state.
   var focused by remember { mutableStateOf(false) }
 
-  Column(
-    modifier = modifier
-      .fillMaxSize()
-      .background(Bg)
-      .statusBarsPadding(),
-  ) {
-    if (state.isLoading) {
-      ScreenLoading(modifier = modifier)
-      return
-    }
+  if (state.isLoading) {
+    ScreenLoading(modifier = modifier)
+    return
+  }
 
-    val errorMsg = state.error
-    if (errorMsg != null) {
-      ScreenError(
-        message = errorMsg,
-        onRetry = { onEvent(HomeEvent.OnRetry) },
-        modifier = modifier,
-      )
-      return
-    }
-    Column(modifier = Modifier.padding(horizontal = spacing.screenHorizontal, vertical = spacing.lg)) {
-      Text(
-        text = stringResource(R.string.app_eyebrow),
-        color = Accent,
-        style = ShootSheetTextStyles.eyebrow,
-      )
-      Spacer(Modifier.height(spacing.xs))
-      Text(
-        text = stringResource(R.string.home_title),
-        color = TextPrimary,
-        style = ShootSheetTextStyles.screenTitle,
-      )
-      Spacer(Modifier.height(spacing.xxs))
-      Text(
-        text = stringResource(R.string.home_subtitle),
-        color = TextSub,
-        style = ShootSheetTextStyles.screenSubtitle,
-      )
-    }
+  val errorMsg = state.error
+  if (errorMsg != null) {
+    ScreenError(
+      message = errorMsg,
+      onRetry = { onEvent(HomeEvent.OnRetry) },
+      modifier = modifier,
+    )
+    return
+  }
 
-    // ── Search ───────────────────────────────────────────────────────────
-    Row(
-      modifier = Modifier
-        .padding(horizontal = spacing.screenHorizontal)
-        .padding(bottom = spacing.md)
-        .clip(Shapes.searchField)
-        .background(Surface)
-        .border(1.dp, if (focused) Accent else Border, Shapes.searchField)
-        .padding(horizontal = 14.dp, vertical = 10.dp),
-      verticalAlignment = Alignment.CenterVertically,
-    ) {
-      Icon(
-        imageVector = ShootSheetIcons.Search,
-        contentDescription = stringResource(R.string.cd_search),
-        tint = TextMuted,
-        modifier = Modifier.size(18.dp),
-      )
-      BasicTextField(
-        value = state.searchQuery,
-        onValueChange = { onEvent(HomeEvent.OnSearchQueryChanged(it)) },
-        modifier = Modifier
-          .weight(1f)
-          .padding(horizontal = 10.dp)
-          .onFocusChanged { focused = it.isFocused },
-        singleLine = true,
-        textStyle = ShootSheetTextStyles.cardTitle.copy(color = TextPrimary),
-        cursorBrush = SolidColor(Accent),
-        decorationBox = { inner ->
-          Box {
-            if (state.searchQuery.isEmpty()) {
-              Text(
-                text = stringResource(R.string.search_placeholder),
-                color = TextMuted,
-                style = ShootSheetTextStyles.cardTitle,
-              )
-            }
-            inner()
-          }
-        },
-      )
-      if (state.searchQuery.isNotEmpty()) {
-        Icon(
-          imageVector = ShootSheetIcons.Close,
-          contentDescription = stringResource(R.string.cd_clear),
-          tint = TextMuted,
-          modifier = Modifier
-            .size(16.dp)
-            .clickable { onEvent(HomeEvent.OnSearchQueryChanged("")) },
+  DSScaffold(
+    modifier = modifier,
+    topBar = {
+      // ── Header ───────────────────────────────────────────────────────
+      Column(modifier = Modifier.padding(horizontal = spacing.screenHorizontal, vertical = spacing.lg)) {
+        Text(
+          text = stringResource(R.string.app_eyebrow),
+          color = Accent,
+          style = ShootSheetTextStyles.eyebrow,
+        )
+        Spacer(Modifier.height(spacing.xs))
+        Text(
+          text = stringResource(R.string.home_title),
+          color = TextPrimary,
+          style = ShootSheetTextStyles.screenTitle,
+        )
+        Spacer(Modifier.height(spacing.xxs))
+        Text(
+          text = stringResource(R.string.home_subtitle),
+          color = TextSub,
+          style = ShootSheetTextStyles.screenSubtitle,
         )
       }
-    }
 
-    // ── Section label ────────────────────────────────────────────────────
-    Text(
-      text = if (state.searchQuery.isNotBlank()) {
-        pluralStringResource(R.plurals.search_results_count, state.filteredCategories.size, state.filteredCategories.size)
-      } else {
-        stringResource(R.string.section_categories)
-      },
-      color = TextSub,
-      style = ShootSheetTextStyles.sectionLabel,
-      modifier = Modifier.padding(horizontal = spacing.screenHorizontal),
-    )
-    Spacer(Modifier.height(spacing.md))
+      // ── Search ───────────────────────────────────────────────────────
+      Row(
+        modifier = Modifier
+          .padding(horizontal = spacing.screenHorizontal)
+          .padding(bottom = spacing.md)
+          .clip(Shapes.searchField)
+          .background(Surface)
+          .border(1.dp, if (focused) Accent else Border, Shapes.searchField)
+          .padding(horizontal = 14.dp, vertical = 10.dp),
+        verticalAlignment = Alignment.CenterVertically,
+      ) {
+        Icon(
+          imageVector = ShootSheetIcons.Search,
+          contentDescription = stringResource(R.string.cd_search),
+          tint = TextMuted,
+          modifier = Modifier.size(18.dp),
+        )
+        BasicTextField(
+          value = state.searchQuery,
+          onValueChange = { onEvent(HomeEvent.OnSearchQueryChanged(it)) },
+          modifier = Modifier
+            .weight(1f)
+            .padding(horizontal = 10.dp)
+            .onFocusChanged { focused = it.isFocused },
+          singleLine = true,
+          textStyle = ShootSheetTextStyles.cardTitle.copy(color = TextPrimary),
+          cursorBrush = SolidColor(Accent),
+          decorationBox = { inner ->
+            Box {
+              if (state.searchQuery.isEmpty()) {
+                Text(
+                  text = stringResource(R.string.search_placeholder),
+                  color = TextMuted,
+                  style = ShootSheetTextStyles.cardTitle,
+                )
+              }
+              inner()
+            }
+          },
+        )
+        if (state.searchQuery.isNotEmpty()) {
+          Icon(
+            imageVector = ShootSheetIcons.Close,
+            contentDescription = stringResource(R.string.cd_clear),
+            tint = TextMuted,
+            modifier = Modifier
+              .size(16.dp)
+              .clickable { onEvent(HomeEvent.OnSearchQueryChanged("")) },
+          )
+        }
+      }
 
-    // ── Category grid ────────────────────────────────────────────────────
+      // ── Section label ─────────────────────────────────────────────────
+      Text(
+        text = if (state.searchQuery.isNotBlank()) {
+          pluralStringResource(R.plurals.search_results_count, state.filteredCategories.size, state.filteredCategories.size)
+        } else {
+          stringResource(R.string.section_categories)
+        },
+        color = TextSub,
+        style = ShootSheetTextStyles.sectionLabel,
+        modifier = Modifier.padding(horizontal = spacing.screenHorizontal),
+      )
+      Spacer(Modifier.height(spacing.md))
+    },
+  ) {
+    // ── Category grid ─────────────────────────────────────────────────
     if (state.filteredCategories.isEmpty()) {
       Box(
         modifier = Modifier.fillMaxSize(),
@@ -238,6 +239,7 @@ fun HomeScreen(
         contentPadding = PaddingValues(horizontal = spacing.screenHorizontal, vertical = spacing.xs),
         horizontalArrangement = Arrangement.spacedBy(10.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp),
+        modifier = Modifier.fillMaxSize(),
       ) {
         items(state.filteredCategories, key = { it.id }) { cat ->
           CategoryCard(

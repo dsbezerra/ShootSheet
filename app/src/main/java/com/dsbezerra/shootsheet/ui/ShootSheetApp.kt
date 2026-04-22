@@ -15,8 +15,11 @@
  */
 package com.dsbezerra.shootsheet.ui
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -136,7 +139,11 @@ fun ShootSheetApp(
 
   if (isExpanded) {
     Row(modifier = modifier.fillMaxSize()) {
-      if (showNav) {
+      AnimatedVisibility(
+        visible = showNav,
+        enter = slideInHorizontally { -it },
+        exit = slideOutHorizontally { -it },
+      ) {
         DSNavigationRail(
           activeTab = state.activeTab,
           onTabSelected = { vm.onEvent(ShootSheetEvent.OnTabSelected(it)) },
@@ -147,7 +154,11 @@ fun ShootSheetApp(
   } else {
     Column(modifier = modifier.fillMaxSize()) {
       navDisplay(Modifier.weight(1f))
-      if (showNav) {
+      AnimatedVisibility(
+        visible = showNav,
+        enter = slideInVertically { it },
+        exit = slideOutVertically { it },
+      ) {
         DSBottomNavbar(
           activeTab = state.activeTab,
           onTabSelected = { vm.onEvent(ShootSheetEvent.OnTabSelected(it)) },
