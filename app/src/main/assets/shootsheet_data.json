@@ -3,32 +3,38 @@
     {
       "id": "portraits",
       "labelRes": "category_portraits_label",
-      "color": "#FFD180"
+      "color": "#FFD180",
+      "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&q=80&fit=crop"
     },
     {
       "id": "landscapes",
       "labelRes": "category_landscapes_label",
-      "color": "#80D8FF"
+      "color": "#80D8FF",
+      "imageUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&q=80&fit=crop"
     },
     {
       "id": "action",
       "labelRes": "category_action_label",
-      "color": "#FF8A80"
+      "color": "#FF8A80",
+      "imageUrl": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=400&h=400&q=80&fit=crop"
     },
     {
       "id": "night",
       "labelRes": "category_night_label",
-      "color": "#B39DDB"
+      "color": "#B39DDB",
+      "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=400&q=80&fit=crop"
     },
     {
       "id": "events",
       "labelRes": "category_events_label",
-      "color": "#A5D6A7"
+      "color": "#A5D6A7",
+      "imageUrl": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&q=80&fit=crop"
     },
     {
       "id": "street",
       "labelRes": "category_street_label",
-      "color": "#B0BEC5"
+      "color": "#B0BEC5",
+      "imageUrl": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=400&q=80&fit=crop"
     }
   ],
   "scenarios": {

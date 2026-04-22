@@ -36,10 +36,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import coil3.compose.AsyncImage
+import coil3.request.ImageRequest
+import coil3.request.crossfade
 import com.dsbezerra.shootsheet.R
 import com.dsbezerra.shootsheet.data.Category
 import com.dsbezerra.shootsheet.ui.theme.Bg
@@ -66,23 +70,42 @@ fun CategoryCard(
     modifier = modifier
       .aspectRatio(1f)
       .clip(Shapes.card)
-      .background(
-        Brush.radialGradient(
-          colorStops = arrayOf(
-            0.00f to composeColor.copy(alpha = 0.55f),
-            0.55f to SurfaceCard,
-            1.00f to Bg,
-          ),
-        ),
-      )
       .clickable(onClick = onClick),
   ) {
+    // ── Background: photo or bokeh fallback ─────────────────────────
+    if (category.imageUrl != null) {
+      AsyncImage(
+        model = ImageRequest.Builder(context)
+          .data(category.imageUrl)
+          .crossfade(true)
+          .build(),
+        contentDescription = null,
+        contentScale = ContentScale.Crop,
+        modifier = Modifier.fillMaxSize(),
+      )
+    } else {
+      Box(
+        modifier = Modifier
+          .fillMaxSize()
+          .background(
+            Brush.radialGradient(
+              colorStops = arrayOf(
+                0.00f to composeColor.copy(alpha = 0.55f),
+                0.55f to SurfaceCard,
+                1.00f to Bg,
+              ),
+            ),
+          ),
+      )
+    }
+
+    // ── Scrim for text legibility ────────────────────────────────────
     Box(
       modifier = Modifier
         .fillMaxSize()
         .background(
           Brush.verticalGradient(
-            colors = listOf(Color.Transparent, Bg.copy(alpha = 0.8f)),
+            colors = listOf(Color.Transparent, Bg.copy(alpha = 0.85f)),
           ),
         ),
     )

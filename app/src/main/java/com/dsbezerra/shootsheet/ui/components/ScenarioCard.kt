@@ -35,7 +35,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.dsbezerra.shootsheet.R
@@ -59,7 +58,7 @@ fun ScenarioCard(
   onClick: () -> Unit,
   modifier: Modifier = Modifier,
 ) {
-  val context = LocalContext.current
+  val context = androidx.compose.ui.platform.LocalContext.current
   val spacing = MaterialTheme.spacing
 
   Box(
@@ -114,7 +113,7 @@ fun ScenarioCard(
         ),
         tint = if (isFavorite) Accent else TextSub,
         modifier = Modifier
-          .padding(start = spacing.sm, top = spacing.xxs)
+          .padding(top = spacing.xxs)
           .size(22.dp)
           .clickable(onClick = onToggleFavorite),
       )

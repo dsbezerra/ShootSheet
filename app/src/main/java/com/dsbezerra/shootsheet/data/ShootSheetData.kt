@@ -27,11 +27,12 @@ data class Category(
   val id: String,
   val labelRes: String,
   val color: String, // Stored as Hex String in JSON
+  val imageUrl: String? = null,
 ) {
   val composeColor: Color
     get() = try {
       Color(color.toColorInt())
-    } catch (e: Exception) {
+    } catch (_: Exception) {
       Color.Gray
     }
 

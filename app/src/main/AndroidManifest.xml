@@ -16,6 +16,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -28,7 +30,6 @@
         <activity
             android:name="com.dsbezerra.shootsheet.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.ShootSheet">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
