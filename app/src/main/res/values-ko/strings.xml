@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">시나리오 라이브러리</string>
+    <string name="home_subtitle">모든 상황에 맞는 카메라 설정</string>
+    <string name="search_placeholder">시나리오 검색\u2026</string>
+    <string name="section_categories">카테고리</string>
+    <string name="search_no_results">\"%1$s\" 에 대한 결과가 없습니다</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">탐색</string>
+    <string name="tab_favorites">즐겨찾기</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">즐겨찾기</string>
+    <string name="favorites_empty_title">즐겨찾기가 없습니다</string>
+    <string name="favorites_empty_body">치트 시트의 \u2665 를 탭하면 현장에서 빠르게 접근할 수 있도록 여기에 저장됩니다.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">카테고리</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">카메라 설정</string>
+    <string name="detail_camera_settings_hint">설정을 탭하여 자세히 알아보세요</string>
+    <string name="detail_pro_tip_label">PRO 팁</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">검색</string>
+    <string name="cd_clear">검색 지우기</string>
+    <string name="cd_close">닫기</string>
+    <string name="cd_info">자세한 정보</string>
+    <string name="cd_back">뒤로</string>
+    <string name="cd_add_favorite">즐겨찾기에 추가</string>
+    <string name="cd_remove_favorite">즐겨찾기에서 제거</string>
+    <string name="cd_toggle_favorite">즐겨찾기 전환</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="other">%1$d 개의 결과</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="other">%1$d 개의 시나리오</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="other">저장된 시나리오 %1$d 개</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">인물</string>
+    <string name="category_landscapes_label">풍경</string>
+    <string name="category_action_label">액션 &amp; 스포츠</string>
+    <string name="category_night_label">야경 &amp; 천체</string>
+    <string name="category_events_label">이벤트</string>
+    <string name="category_street_label">스트리트</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">조리개 (f값)</string>
+    <string name="tooltip_aperture_body">심도와 빛의 양을 제어합니다. 낮은 f값 (f/1.4) = 넓게 열림 = 얕은 심도 + 많은 빛. 높은 f값 (f/16) = 작은 개구부 = 깊은 심도 + 적은 빛.</string>
+    <string name="tooltip_shutter_title">셔터 속도</string>
+    <string name="tooltip_shutter_body">센서가 노출되는 시간. 빠른 속도 (1/1000초)는 움직임을 정지시킵니다. 느린 속도 (1/30초)는 블러를 생성합니다. 손으로 1/60초 이하로 찍으면 카메라 흔들림이 발생합니다 — 삼각대를 사용하세요.</string>
+    <string name="tooltip_iso_title">ISO 감도</string>
+    <string name="tooltip_iso_body">센서 신호를 증폭합니다. ISO 100 = 깨끗하고 노이즈 없음. ISO 6400+ = 밝지만 노이즈/입자가 많음. 항상 장면이 허용하는 가장 낮은 ISO를 사용하세요.</string>
+    <string name="tooltip_wb_title">화이트 밸런스</string>
+    <string name="tooltip_wb_body">흰색이 중립적으로 보이도록 색 온도를 조정합니다. \"흐림\"은 이미지를 따뜻하게 합니다 (~6500K). \"텅스텐\"은 차갑게 합니다 (~3200K). RAW로 촬영하면 나중에 변경할 수 있습니다.</string>
+    <string name="tooltip_focus_title">포커스 모드</string>
+    <string name="tooltip_focus_body">단일 AF (AF-S): 셔터 반누름 시 초점을 잠금 — 정지한 피사체에 이상적. 연속 AF (AF-C): 움직이는 피사체를 지속적으로 추적. 수동: 초점을 정밀하게 직접 제어.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">골든 아워 인물 사진</string>
+    <string name="scenario_golden_hour_subtitle">일출/일몰의 따뜻하고 아름다운 빛</string>
+    <string name="scenario_golden_hour_tip">자연스러운 림 라이트를 위해 피사체 뒤에 태양을 배치하세요. 반사판으로 그림자를 채우세요.</string>
+
+    <string name="scenario_indoor_natural_title">실내 자연광</string>
+    <string name="scenario_indoor_natural_subtitle">창문 빛으로 하는 인물 세션</string>
+    <string name="scenario_indoor_natural_tip">피사체를 창문과 45° 각도로 배치하세요 (렘브란트 조명). 깨끗한 색감을 위해 모든 인공조명을 끄세요.</string>
+
+    <string name="scenario_studio_portrait_title">스튜디오 인물 사진</string>
+    <string name="scenario_studio_portrait_subtitle">조명을 제어한 스튜디오 설정</string>
+    <string name="scenario_studio_portrait_tip">플래시 동조 속도(보통 1/200) 이하로 셔터를 동조하세요. ISO 100으로 시작하여 플래시 출력을 조정하세요.</string>
+
+    <string name="scenario_blue_hour_title">블루 아워 풍경</string>
+    <string name="scenario_blue_hour_subtitle">일몰 후 20~40분의 마법</string>
+    <string name="scenario_blue_hour_tip">삼각대와 리모컨 셔터를 사용하세요. 텅스텐 화이트밸런스는 우울한 분위기의 블루 캐스트를 강조합니다.</string>
+
+    <string name="scenario_waterfall_title">실크 폭포</string>
+    <string name="scenario_waterfall_subtitle">장노출로 담는 물의 움직임</string>
+    <string name="scenario_waterfall_tip">밝은 환경에서는 ND 필터를 사용하세요. "솜사탕" 효과는 1~2초 노출에서 나타납니다.</string>
+
+    <string name="scenario_golden_landscape_title">골든 아워 풍경</string>
+    <string name="scenario_golden_landscape_subtitle">지형 위의 극적인 따뜻한 빛</string>
+    <string name="scenario_golden_landscape_tip">골든 아워 30분 전에 도착하세요. 미리 장소를 정찰하세요 — 빛은 몇 분 만에 변합니다.</string>
+
+    <string name="scenario_freeze_motion_title">빠른 움직임 정지</string>
+    <string name="scenario_freeze_motion_subtitle">선명한 액션 사진</string>
+    <string name="scenario_freeze_motion_tip">연사 모드를 사용하고 움직이는 피사체를 따르세요. AI 트래킹 AF가 여기서 큰 차이를 만듭니다.</string>
+
+    <string name="scenario_panning_title">패닝 블러</string>
+    <string name="scenario_panning_subtitle">피사체는 선명하고 배경은 블러</string>
+    <string name="scenario_panning_tip">피사체를 부드럽게 따르며 움직임 중에 셔터를 누르세요. 연습이 필요합니다 — 연사로 찍으세요.</string>
+
+    <string name="scenario_sports_outdoor_title">야외 스포츠</string>
+    <string name="scenario_sports_outdoor_subtitle">낮 시간 필드 &amp; 코트 스포츠</string>
+    <string name="scenario_sports_outdoor_tip">태양을 등지고 촬영할 수 있는 위치를 잡으세요. 타이트한 크롭을 위해 긴 망원렌즈 (200~600mm)를 사용하세요.</string>
+
+    <string name="scenario_milky_way_title">은하수</string>
+    <string name="scenario_milky_way_subtitle">맑은 밤하늘의 은하 중심부</string>
+    <string name="scenario_milky_way_tip">「500 법칙」을 사용하세요 — 500을 초점 거리로 나누면 별 궤적이 나타나기 전 최대 초가 됩니다.</string>
+
+    <string name="scenario_city_night_title">야경</string>
+    <string name="scenario_city_night_subtitle">도시 야경과 빛의 궤적</string>
+    <string name="scenario_city_night_tip">시민 황혼을 기다리세요 — 일몰 약 20분 후, 도시의 불빛과 푸른 하늘이 아름답게 균형을 이룹니다.</string>
+
+    <string name="scenario_light_painting_title">라이트 페인팅</string>
+    <string name="scenario_light_painting_subtitle">빛 도구를 이용한 창의적인 장노출</string>
+    <string name="scenario_light_painting_tip">사진에 찍히지 않도록 어두운 옷을 입으세요. 세밀한 작업에는 작은 손전등을 사용하세요.</string>
+
+    <string name="scenario_wedding_reception_title">웨딩 리셉션</string>
+    <string name="scenario_wedding_reception_subtitle">혼합 조명의 실내 이벤트</string>
+    <string name="scenario_wedding_reception_tip">자연스러운 보조광을 위해 플래시를 천장에 바운스하세요. RAW로 촬영 — 혼합광은 카메라 내에서 맞추기 어렵습니다.</string>
+
+    <string name="scenario_concert_title">콘서트 &amp; 라이브 음악</string>
+    <string name="scenario_concert_subtitle">무대 조명, 빠르게 움직이는 퍼포머</string>
+    <string name="scenario_concert_tip">대부분의 공연장은 처음 3곡 동안만 카메라를 허용합니다. 사운드체크 중 조명을 미리 확인하세요.</string>
+
+    <string name="scenario_corporate_title">기업 행사</string>
+    <string name="scenario_corporate_subtitle">컨퍼런스, 헤드샷, 패널</string>
+    <string name="scenario_corporate_tip">빠르게 이미지를 납품하세요 — 클라이언트는 종종 당일 SNS 게시물이 필요합니다. 현장에서 적극적으로 컬링하세요.</string>
+
+    <string name="scenario_sunny_street_title">맑은 날의 스트리트</string>
+    <string name="scenario_sunny_street_subtitle">밝은 도시 낮 촬영</string>
+    <string name="scenario_sunny_street_tip">Sunny 16 법칙: 맑은 날 f/16에서 셔터 = 1/ISO. 엉덩이에서 찍기 위해 「존 포커스」를 사용하세요.</string>
+
+    <string name="scenario_rainy_street_title">비 오는 날의 스트리트</string>
+    <string name="scenario_rainy_street_subtitle">반사와 분위기 있는 젖은 장면</string>
+    <string name="scenario_rainy_street_tip">웅덩이 반사를 담기 위해 낮게 찍으세요. 흐린 빛은 자연스럽게 부드럽습니다 — 스트리트 색감에 좋습니다.</string>
+
+    <string name="scenario_night_street_title">밤의 스트리트</string>
+    <string name="scenario_night_street_subtitle">네온사인, 바 &amp; 늦은 밤 도시 생활</string>
+    <string name="scenario_night_street_tip">그레인을 받아들이세요. 밤의 높은 ISO 노이즈는 영화적으로 보입니다 — 그림자가 아닌 하이라이트에 노출을 맞추세요.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">다시 시도</string>
+    <string name="error_load_failed">데이터를 불러올 수 없습니다. 다시 시도해 주세요.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">조리개</string>
+    <string name="setting_shutter">셔터 속도</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">화이트 밸런스</string>
+    <string name="setting_focus">포커스 모드</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">흐림</string>
+    <string name="wb_daylight">맑음</string>
+    <string name="wb_flash_5500k">플래시 / 5500K</string>
+    <string name="wb_tungsten_3200k">텅스텐 / 3200K</string>
+    <string name="wb_shade_7000k">그늘 / 7000K</string>
+    <string name="wb_auto">자동</string>
+    <string name="wb_auto_3500k">자동 / 3500K</string>
+    <string name="wb_fluorescent_4200k">형광등 / 4200K</string>
+    <string name="wb_tungsten_2700k">텅스텐 / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">단일 AF</string>
+    <string name="focus_manual_inf">수동 / ∞</string>
+    <string name="focus_manual">수동</string>
+    <string name="focus_continuous_af">연속 AF</string>
+    <string name="focus_zone_pre">존 / 프리포커스</string>
+</resources>

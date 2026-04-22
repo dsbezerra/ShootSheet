@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Thư viện Kịch bản</string>
+    <string name="home_subtitle">Cài đặt máy ảnh cho mọi tình huống</string>
+    <string name="search_placeholder">Tìm kiếm kịch bản\u2026</string>
+    <string name="section_categories">Danh mục</string>
+    <string name="search_no_results">Không có kết quả cho \"%1$s\"</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">Khám phá</string>
+    <string name="tab_favorites">Yêu thích</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">Yêu thích</string>
+    <string name="favorites_empty_title">Chưa có mục yêu thích</string>
+    <string name="favorites_empty_body">Nhấn \u2665 trên bất kỳ tờ hướng dẫn nào để lưu tại đây để truy cập nhanh ngoài thực địa.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">Danh mục</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">Cài đặt Máy ảnh</string>
+    <string name="detail_camera_settings_hint">Nhấn vào bất kỳ cài đặt nào để tìm hiểu thêm</string>
+    <string name="detail_pro_tip_label">MẸO CHUYÊN GIA</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">Tìm kiếm</string>
+    <string name="cd_clear">Xóa tìm kiếm</string>
+    <string name="cd_close">Đóng</string>
+    <string name="cd_info">Thêm thông tin</string>
+    <string name="cd_back">Quay lại</string>
+    <string name="cd_add_favorite">Thêm vào yêu thích</string>
+    <string name="cd_remove_favorite">Xóa khỏi yêu thích</string>
+    <string name="cd_toggle_favorite">Chuyển đổi yêu thích</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="other">%1$d kết quả</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="other">%1$d kịch bản</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="other">%1$d kịch bản đã lưu</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">Chân dung</string>
+    <string name="category_landscapes_label">Phong cảnh</string>
+    <string name="category_action_label">Hành động &amp; Thể thao</string>
+    <string name="category_night_label">Ban đêm &amp; Thiên văn</string>
+    <string name="category_events_label">Sự kiện</string>
+    <string name="category_street_label">Đường phố</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">Khẩu độ (f-stop)</string>
+    <string name="tooltip_aperture_body">Kiểm soát độ sâu trường và lượng ánh sáng vào. Số f nhỏ (f/1.4) = mở rộng = độ sâu nông + nhiều sáng hơn. Số lớn (f/16) = mở nhỏ = độ sâu lớn + ít sáng hơn.</string>
+    <string name="tooltip_shutter_title">Tốc độ Màn trập</string>
+    <string name="tooltip_shutter_body">Thời gian cảm biến tiếp xúc với ánh sáng. Tốc độ nhanh (1/1000s) đóng băng chuyển động. Tốc độ chậm (1/30s) tạo mờ. Dưới 1/60s cầm tay gây rung máy — dùng chân máy.</string>
+    <string name="tooltip_iso_title">Độ nhạy ISO</string>
+    <string name="tooltip_iso_body">Khuếch đại tín hiệu cảm biến. ISO 100 = sạch, không nhiễu. ISO 6400+ = sáng nhưng nhiễu/hạt. Luôn dùng ISO thấp nhất mà cảnh cho phép.</string>
+    <string name="tooltip_wb_title">Cân bằng Trắng</string>
+    <string name="tooltip_wb_body">Điều chỉnh nhiệt độ màu để màu trắng trông trung tính. \"Nhiều mây\" làm ảnh ấm hơn (~6500K). \"Tungsten\" làm lạnh (~3200K). Chụp RAW cho phép thay đổi sau.</string>
+    <string name="tooltip_focus_title">Chế độ Lấy nét</string>
+    <string name="tooltip_focus_body">AF Đơn (AF-S): khóa nét khi nhấn nửa nút chụp — lý tưởng cho chủ thể tĩnh. AF Liên tục (AF-C): liên tục theo dõi chủ thể di chuyển. Thủ công: bạn tự kiểm soát nét chính xác.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">Chân dung Giờ Vàng</string>
+    <string name="scenario_golden_hour_subtitle">Ánh sáng ấm áp, đẹp khi bình minh/hoàng hôn</string>
+    <string name="scenario_golden_hour_tip">Đặt chủ thể với mặt trời phía sau để tạo viền sáng tự nhiên. Dùng tấm phản sáng để bổ sung vào vùng tối.</string>
+
+    <string name="scenario_indoor_natural_title">Ánh sáng Tự nhiên trong Nhà</string>
+    <string name="scenario_indoor_natural_subtitle">Chụp chân dung với ánh sáng cửa sổ</string>
+    <string name="scenario_indoor_natural_tip">Đặt chủ thể góc 45° so với cửa sổ (ánh sáng Rembrandt). Tắt hết đèn nhân tạo để có màu sắc trong trẻo.</string>
+
+    <string name="scenario_studio_portrait_title">Chân dung Studio</string>
+    <string name="scenario_studio_portrait_subtitle">Bố cục ánh sáng được kiểm soát</string>
+    <string name="scenario_studio_portrait_tip">Đồng bộ màn trập dưới tốc độ đồng bộ đèn flash (thường 1/200). Bắt đầu với ISO 100 và điều chỉnh công suất flash.</string>
+
+    <string name="scenario_blue_hour_title">Phong cảnh Giờ Xanh</string>
+    <string name="scenario_blue_hour_subtitle">Phép màu 20–40 phút sau khi mặt trời lặn</string>
+    <string name="scenario_blue_hour_tip">Dùng chân máy và điều khiển từ xa. WB Tungsten tăng cường tông xanh cho vẻ u ám, ấn tượng.</string>
+
+    <string name="scenario_waterfall_title">Thác nước Lụa</string>
+    <string name="scenario_waterfall_subtitle">Chuyển động nước phơi sáng dài</string>
+    <string name="scenario_waterfall_tip">Dùng kính lọc ND khi trời sáng. Hiệu ứng \"bông gòn\" xuất hiện ở khoảng 1–2 giây phơi sáng.</string>
+
+    <string name="scenario_golden_landscape_title">Phong cảnh Giờ Vàng</string>
+    <string name="scenario_golden_landscape_subtitle">Ánh sáng ấm, kịch tính trên địa hình</string>
+    <string name="scenario_golden_landscape_tip">Đến sớm 30 phút trước giờ vàng. Khảo sát địa điểm trước — ánh sáng thay đổi trong vài phút.</string>
+
+    <string name="scenario_freeze_motion_title">Đóng băng Chuyển động Nhanh</string>
+    <string name="scenario_freeze_motion_subtitle">Ảnh hành động sắc nét</string>
+    <string name="scenario_freeze_motion_tip">Dùng chế độ chụp liên tiếp và xoay theo chủ thể di chuyển. AF theo dõi AI tạo ra sự khác biệt lớn.</string>
+
+    <string name="scenario_panning_title">Panning Làm mờ Chuyển động</string>
+    <string name="scenario_panning_subtitle">Mờ tốc độ với chủ thể sắc nét</string>
+    <string name="scenario_panning_tip">Theo dõi chủ thể mượt mà và nhấn màn trập giữa chuyển động. Cần luyện tập — chụp liên tiếp.</string>
+
+    <string name="scenario_sports_outdoor_title">Thể thao Ngoài trời</string>
+    <string name="scenario_sports_outdoor_subtitle">Thể thao sân bãi ban ngày</string>
+    <string name="scenario_sports_outdoor_tip">Chọn vị trí chụp với mặt trời sau lưng. Dùng ống kính tele dài (200–600mm) để có góc chụp chặt.</string>
+
+    <string name="scenario_milky_way_title">Dải Ngân hà</string>
+    <string name="scenario_milky_way_subtitle">Lõi thiên hà trong đêm trời quang</string>
+    <string name="scenario_milky_way_tip">Dùng \"quy tắc 500\" — chia 500 cho tiêu cự = số giây tối đa trước khi xuất hiện vệt sao.</string>
+
+    <string name="scenario_city_night_title">Thành phố Ban đêm</string>
+    <string name="scenario_city_night_subtitle">Cảnh quan đô thị ban đêm &amp; vệt ánh sáng</string>
+    <string name="scenario_city_night_tip">Chờ hoàng hôn dân sự — đèn thành phố và bầu trời xanh cân bằng đẹp khoảng 20 phút sau hoàng hôn.</string>
+
+    <string name="scenario_light_painting_title">Vẽ bằng Ánh sáng</string>
+    <string name="scenario_light_painting_subtitle">Phơi sáng dài sáng tạo với dụng cụ ánh sáng</string>
+    <string name="scenario_light_painting_tip">Mặc quần áo tối để không xuất hiện trong ảnh. Dùng đèn pin nhỏ cho công việc chi tiết.</string>
+
+    <string name="scenario_wedding_reception_title">Tiệc Cưới</string>
+    <string name="scenario_wedding_reception_subtitle">Sự kiện trong nhà với ánh sáng hỗn hợp</string>
+    <string name="scenario_wedding_reception_tip">Bật flash lên trần để tạo ánh sáng bổ sung tự nhiên. Chụp RAW — ánh sáng hỗn hợp khó hiệu chỉnh trong máy.</string>
+
+    <string name="scenario_concert_title">Hòa nhạc &amp; Âm nhạc Trực tiếp</string>
+    <string name="scenario_concert_subtitle">Ánh đèn sân khấu, nghệ sĩ di chuyển nhanh</string>
+    <string name="scenario_concert_tip">Hầu hết địa điểm chỉ cho phép máy ảnh trong 3 bài đầu. Quan sát ánh sáng trong khi soundcheck.</string>
+
+    <string name="scenario_corporate_title">Sự kiện Doanh nghiệp</string>
+    <string name="scenario_corporate_subtitle">Hội nghị, ảnh chân dung công ty, hội thảo</string>
+    <string name="scenario_corporate_tip">Giao ảnh nhanh — khách hàng thường cần đăng mạng xã hội trong ngày. Chọn lọc ảnh gắt gao ngoài thực địa.</string>
+
+    <string name="scenario_sunny_street_title">Đường phố Ngày Nắng</string>
+    <string name="scenario_sunny_street_subtitle">Chụp ảnh đô thị dưới ánh sáng ban ngày</string>
+    <string name="scenario_sunny_street_tip">Quy tắc Sunny 16: ngày nắng ở f/16, màn trập = 1/ISO. Dùng \"lấy nét theo vùng\" để chụp từ hông.</string>
+
+    <string name="scenario_rainy_street_title">Đường phố Ngày Mưa</string>
+    <string name="scenario_rainy_street_subtitle">Phản chiếu &amp; cảnh ẩm ướt đầy cảm xúc</string>
+    <string name="scenario_rainy_street_tip">Chụp góc thấp để bắt phản chiếu trong vũng nước. Ánh sáng흐린 tự nhiên mềm mại — tuyệt vời cho màu sắc đường phố.</string>
+
+    <string name="scenario_night_street_title">Đường phố Ban đêm</string>
+    <string name="scenario_night_street_subtitle">Biển hiệu neon, quán bar &amp; đời sống đô thị khuya</string>
+    <string name="scenario_night_street_tip">Đón nhận hạt ảnh. Nhiễu ISO cao ban đêm mang lại cảm giác điện ảnh — phơi sáng cho vùng sáng, không phải vùng tối.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">Thử lại</string>
+    <string name="error_load_failed">Không thể tải dữ liệu. Vui lòng thử lại.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">Khẩu độ</string>
+    <string name="setting_shutter">Tốc độ Màn trập</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">Cân bằng Trắng</string>
+    <string name="setting_focus">Chế độ Lấy nét</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">Nhiều mây</string>
+    <string name="wb_daylight">Ánh sáng ban ngày</string>
+    <string name="wb_flash_5500k">Flash / 5500K</string>
+    <string name="wb_tungsten_3200k">Tungsten / 3200K</string>
+    <string name="wb_shade_7000k">Bóng râm / 7000K</string>
+    <string name="wb_auto">Tự động</string>
+    <string name="wb_auto_3500k">Tự động / 3500K</string>
+    <string name="wb_fluorescent_4200k">Đèn huỳnh quang / 4200K</string>
+    <string name="wb_tungsten_2700k">Tungsten / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">AF Đơn</string>
+    <string name="focus_manual_inf">Thủ công / ∞</string>
+    <string name="focus_manual">Thủ công</string>
+    <string name="focus_continuous_af">AF Liên tục</string>
+    <string name="focus_zone_pre">Vùng / Tiền lấy nét</string>
+</resources>

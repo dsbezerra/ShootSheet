@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Библиотека сценариев</string>
+    <string name="home_subtitle">Настройки камеры для каждой ситуации</string>
+    <string name="search_placeholder">Поиск сценариев\u2026</string>
+    <string name="section_categories">Категории</string>
+    <string name="search_no_results">Нет результатов для \"%1$s\"</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">Обзор</string>
+    <string name="tab_favorites">Избранное</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">Избранное</string>
+    <string name="favorites_empty_title">Пока нет избранного</string>
+    <string name="favorites_empty_body">Нажмите \u2665 на любой шпаргалке, чтобы сохранить её здесь для быстрого доступа в поле.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">Категория</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">Настройки камеры</string>
+    <string name="detail_camera_settings_hint">Нажмите на любую настройку, чтобы узнать больше</string>
+    <string name="detail_pro_tip_label">СОВЕТ ПРОФИ</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">Поиск</string>
+    <string name="cd_clear">Очистить поиск</string>
+    <string name="cd_close">Закрыть</string>
+    <string name="cd_info">Подробнее</string>
+    <string name="cd_back">Назад</string>
+    <string name="cd_add_favorite">Добавить в избранное</string>
+    <string name="cd_remove_favorite">Удалить из избранного</string>
+    <string name="cd_toggle_favorite">Переключить избранное</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d результат</item>
+        <item quantity="few">%1$d результата</item>
+        <item quantity="many">%1$d результатов</item>
+        <item quantity="other">%1$d результата</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="one">%1$d сценарий</item>
+        <item quantity="few">%1$d сценария</item>
+        <item quantity="many">%1$d сценариев</item>
+        <item quantity="other">%1$d сценария</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="one">%1$d сохранённый сценарий</item>
+        <item quantity="few">%1$d сохранённых сценария</item>
+        <item quantity="many">%1$d сохранённых сценариев</item>
+        <item quantity="other">%1$d сохранённых сценария</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">Портреты</string>
+    <string name="category_landscapes_label">Пейзажи</string>
+    <string name="category_action_label">Экшн и спорт</string>
+    <string name="category_night_label">Ночь и астро</string>
+    <string name="category_events_label">События</string>
+    <string name="category_street_label">Стрит</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">Диафрагма (f-стоп)</string>
+    <string name="tooltip_aperture_body">Управляет глубиной резкости и светопропусканием. Малые значения f (f/1.4) = широко открыта = малая ГРИП + больше света. Большие значения (f/16) = малое отверстие = большая ГРИП + меньше света.</string>
+    <string name="tooltip_shutter_title">Выдержка</string>
+    <string name="tooltip_shutter_body">Время экспозиции сенсора. Короткая выдержка (1/1000с) замораживает движение. Длинная (1/30с) даёт смаз. Ниже 1/60с с рук вызывает смаз от дрожания — используйте штатив.</string>
+    <string name="tooltip_iso_title">Чувствительность ISO</string>
+    <string name="tooltip_iso_body">Усиливает сигнал сенсора. ISO 100 = чистый, без шума. ISO 6400+ = яркий, но с шумом/зерном. Всегда используйте минимально возможный ISO.</string>
+    <string name="tooltip_wb_title">Баланс белого</string>
+    <string name="tooltip_wb_body">Регулирует цветовую температуру для нейтральных белых. «Облачно» тёплый тон (~6500K). «Лампа накаливания» холодный тон (~3200K). Съёмка в RAW позволяет изменить это позже.</string>
+    <string name="tooltip_focus_title">Режим фокусировки</string>
+    <string name="tooltip_focus_body">Одиночный AF (AF-S): фиксирует фокус при полунажатии — идеально для неподвижных объектов. Следящий AF (AF-C): непрерывно отслеживает движущийся объект. Ручной: точное управление фокусом.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">Портреты в золотой час</string>
+    <string name="scenario_golden_hour_subtitle">Тёплый, лестный свет на рассвете/закате</string>
+    <string name="scenario_golden_hour_tip">Расположите объект так, чтобы солнце было сзади — получите естественную контровую подсветку. Используйте отражатель для заполнения теней.</string>
+
+    <string name="scenario_indoor_natural_title">Естественный свет в помещении</string>
+    <string name="scenario_indoor_natural_subtitle">Портретные сессии у окна</string>
+    <string name="scenario_indoor_natural_tip">Расположите объект под углом 45° к окну (освещение Рембрандта). Выключите все искусственные источники света для чистых цветов.</string>
+
+    <string name="scenario_studio_portrait_title">Студийные портреты</string>
+    <string name="scenario_studio_portrait_subtitle">Управляемые схемы освещения</string>
+    <string name="scenario_studio_portrait_tip">Установите выдержку ниже скорости синхронизации со вспышкой (обычно 1/200). Начните с ISO 100 и отрегулируйте мощность вспышки.</string>
+
+    <string name="scenario_blue_hour_title">Пейзажи в голубой час</string>
+    <string name="scenario_blue_hour_subtitle">Магия 20–40 мин после захода солнца</string>
+    <string name="scenario_blue_hour_tip">Используйте штатив и пульт дистанционного спуска. ББ «лампа накаливания» усиливает голубой оттенок для атмосферного вида.</string>
+
+    <string name="scenario_waterfall_title">Шёлковые водопады</string>
+    <string name="scenario_waterfall_subtitle">Движение воды при длинной выдержке</string>
+    <string name="scenario_waterfall_tip">При ярком свете используйте ND-фильтр. Эффект «ватных» струй появляется при выдержках 1–2 секунды.</string>
+
+    <string name="scenario_golden_landscape_title">Пейзажи в золотой час</string>
+    <string name="scenario_golden_landscape_subtitle">Драматичный тёплый свет на местности</string>
+    <string name="scenario_golden_landscape_tip">Приезжайте за 30 мин до золотого часа. Заранее изучите локации — свет меняется за минуты.</string>
+
+    <string name="scenario_freeze_motion_title">Заморозить быстрое движение</string>
+    <string name="scenario_freeze_motion_subtitle">Чёткие экшн-снимки</string>
+    <string name="scenario_freeze_motion_tip">Используйте серийную съёмку и следите за движущимися объектами. Следящий AF с ИИ делает огромную разницу.</string>
+
+    <string name="scenario_panning_title">Проводка с размытием движения</string>
+    <string name="scenario_panning_subtitle">Смаз скорости с резким объектом</string>
+    <string name="scenario_panning_tip">Плавно следите за объектом и снимайте в середине движения. Требует практики — снимайте сериями.</string>
+
+    <string name="scenario_sports_outdoor_title">Уличный спорт</string>
+    <string name="scenario_sports_outdoor_subtitle">Дневные игровые виды спорта</string>
+    <string name="scenario_sports_outdoor_tip">Занимайте позицию так, чтобы солнце было за спиной. Используйте длинный телеобъектив (200–600мм) для крупных планов.</string>
+
+    <string name="scenario_milky_way_title">Млечный Путь</string>
+    <string name="scenario_milky_way_subtitle">Ядро галактики в ясные ночи</string>
+    <string name="scenario_milky_way_tip">Используйте «правило 500» — разделите 500 на фокусное расстояние = максимальные секунды до появления звёздных треков.</string>
+
+    <string name="scenario_city_night_title">Город ночью</string>
+    <string name="scenario_city_night_subtitle">Ночные пейзажи и световые следы</string>
+    <string name="scenario_city_night_tip">Дождитесь гражданских сумерек — городские огни и синее небо великолепно балансируют примерно через 20 мин после захода солнца.</string>
+
+    <string name="scenario_light_painting_title">Рисование светом</string>
+    <string name="scenario_light_painting_subtitle">Творческая длинная выдержка со световыми инструментами</string>
+    <string name="scenario_light_painting_tip">Надевайте тёмную одежду, чтобы не попасть в кадр. Используйте небольшой фонарик для детальной работы.</string>
+
+    <string name="scenario_wedding_reception_title">Свадебный банкет</string>
+    <string name="scenario_wedding_reception_subtitle">Мероприятия с смешанным освещением в помещении</string>
+    <string name="scenario_wedding_reception_tip">Направьте вспышку в потолок для естественно выглядящей заполняющей подсветки. Снимайте в RAW — смешанный свет сложно скорректировать в камере.</string>
+
+    <string name="scenario_concert_title">Концерт и живая музыка</string>
+    <string name="scenario_concert_subtitle">Сценическое освещение, быстрые исполнители</string>
+    <string name="scenario_concert_tip">Большинство площадок разрешают камеры только во время первых 3 песен. Изучите освещение во время саундчека.</string>
+
+    <string name="scenario_corporate_title">Корпоративные мероприятия</string>
+    <string name="scenario_corporate_subtitle">Конференции, деловые портреты, панели</string>
+    <string name="scenario_corporate_tip">Доставляйте снимки быстро — клиентам часто нужны посты в соцсетях в тот же день. Жёстко отбирайте кадры на месте.</string>
+
+    <string name="scenario_sunny_street_title">Улица в солнечный день</string>
+    <string name="scenario_sunny_street_subtitle">Городская фотосъёмка при ярком дневном освещении</string>
+    <string name="scenario_sunny_street_tip">Правило Sunny 16: при f/16 в солнечный день выдержка = 1/ISO. Используйте «зонную фокусировку» для съёмки от бедра.</string>
+
+    <string name="scenario_rainy_street_title">Улица в дождливый день</string>
+    <string name="scenario_rainy_street_subtitle">Отражения и атмосферные мокрые сцены</string>
+    <string name="scenario_rainy_street_tip">Снимайте низко, чтобы поймать отражения в лужах. Пасмурный свет естественно мягкий — отлично для уличных цветов.</string>
+
+    <string name="scenario_night_street_title">Улица ночью</string>
+    <string name="scenario_night_street_subtitle">Неоновые вывески, бары и ночная жизнь</string>
+    <string name="scenario_night_street_tip">Примите зерно. Высокий ISO-шум ночью выглядит кинематографично — экспонируйте по светам, а не по теням.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">Повторить</string>
+    <string name="error_load_failed">Не удалось загрузить данные. Повторите попытку.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">Диафрагма</string>
+    <string name="setting_shutter">Выдержка</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">Баланс белого</string>
+    <string name="setting_focus">Фокусировка</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">Облачно</string>
+    <string name="wb_daylight">Дневной свет</string>
+    <string name="wb_flash_5500k">Вспышка / 5500K</string>
+    <string name="wb_tungsten_3200k">Лампа накаливания / 3200K</string>
+    <string name="wb_shade_7000k">Тень / 7000K</string>
+    <string name="wb_auto">Авто</string>
+    <string name="wb_auto_3500k">Авто / 3500K</string>
+    <string name="wb_fluorescent_4200k">Флуоресцентный / 4200K</string>
+    <string name="wb_tungsten_2700k">Лампа накаливания / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">Одиночный AF</string>
+    <string name="focus_manual_inf">Ручной / ∞</string>
+    <string name="focus_manual">Ручной</string>
+    <string name="focus_continuous_af">Следящий AF</string>
+    <string name="focus_zone_pre">Зона / Предфокус</string>
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">مكتبة السيناريوهات</string>
+    <string name="home_subtitle">إعدادات الكاميرا لكل موقف</string>
+    <string name="search_placeholder">البحث في السيناريوهات\u2026</string>
+    <string name="section_categories">الفئات</string>
+    <string name="search_no_results">لا توجد نتائج لـ \"%1$s\"</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">استكشاف</string>
+    <string name="tab_favorites">المفضلة</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">المفضلة</string>
+    <string name="favorites_empty_title">لا توجد مفضلة بعد</string>
+    <string name="favorites_empty_body">انقر على \u2665 في أي ورقة مرجعية لحفظها هنا للوصول السريع في الميدان.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">الفئة</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">إعدادات الكاميرا</string>
+    <string name="detail_camera_settings_hint">انقر على أي إعداد لمعرفة المزيد</string>
+    <string name="detail_pro_tip_label">نصيحة احترافية</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">بحث</string>
+    <string name="cd_clear">مسح البحث</string>
+    <string name="cd_close">إغلاق</string>
+    <string name="cd_info">مزيد من المعلومات</string>
+    <string name="cd_back">رجوع</string>
+    <string name="cd_add_favorite">إضافة إلى المفضلة</string>
+    <string name="cd_remove_favorite">إزالة من المفضلة</string>
+    <string name="cd_toggle_favorite">تبديل المفضلة</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="zero">لا توجد نتائج</item>
+        <item quantity="one">نتيجة واحدة</item>
+        <item quantity="two">نتيجتان</item>
+        <item quantity="few">%1$d نتائج</item>
+        <item quantity="many">%1$d نتيجة</item>
+        <item quantity="other">%1$d نتيجة</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="zero">لا توجد سيناريوهات</item>
+        <item quantity="one">سيناريو واحد</item>
+        <item quantity="two">سيناريوان</item>
+        <item quantity="few">%1$d سيناريوهات</item>
+        <item quantity="many">%1$d سيناريو</item>
+        <item quantity="other">%1$d سيناريو</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="zero">لا توجد سيناريوهات محفوظة</item>
+        <item quantity="one">سيناريو محفوظ واحد</item>
+        <item quantity="two">سيناريوان محفوظان</item>
+        <item quantity="few">%1$d سيناريوهات محفوظة</item>
+        <item quantity="many">%1$d سيناريو محفوظ</item>
+        <item quantity="other">%1$d سيناريو محفوظ</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">الصور الشخصية</string>
+    <string name="category_landscapes_label">المناظر الطبيعية</string>
+    <string name="category_action_label">الحركة والرياضة</string>
+    <string name="category_night_label">الليل والفلك</string>
+    <string name="category_events_label">الفعاليات</string>
+    <string name="category_street_label">التصوير الميداني</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">فتحة العدسة (f-stop)</string>
+    <string name="tooltip_aperture_body">تتحكم في عمق المجال وكمية الضوء. أرقام f صغيرة (f/1.4) = فتحة واسعة = عمق مجال ضحل + ضوء أكثر. أرقام كبيرة (f/16) = فتحة صغيرة = عمق مجال كبير + ضوء أقل.</string>
+    <string name="tooltip_shutter_title">سرعة الغالق</string>
+    <string name="tooltip_shutter_body">مدة تعرض المستشعر للضوء. السرعات العالية (1/1000 ث) تجمّد الحركة. السرعات البطيئة (1/30 ث) تخلق ضبابية. أقل من 1/60 ث باليد يسبب اهتزازاً — استخدم حاملاً ثلاثياً.</string>
+    <string name="tooltip_iso_title">حساسية ISO</string>
+    <string name="tooltip_iso_body">يضخّم إشارة المستشعر. ISO 100 = نظيف، بلا ضوضاء. ISO 6400+ = ساطع لكن به ضوضاء/حبيبات. استخدم دائماً أدنى ISO تسمح به الصورة.</string>
+    <string name="tooltip_wb_title">توازن اللون الأبيض</string>
+    <string name="tooltip_wb_body">يضبط درجة حرارة اللون لجعل الأبيض يبدو محايداً. \"غائم\" يدفئ الصورة (~6500K). \"تنغستن\" يبردها (~3200K). التصوير بصيغة RAW يتيح تغييره لاحقاً.</string>
+    <string name="tooltip_focus_title">وضع التركيز</string>
+    <string name="tooltip_focus_body">AF أحادي (AF-S): يثبّت التركيز عند نصف ضغطة الغالق — مثالي للموضوعات الثابتة. AF مستمر (AF-C): يتابع الموضوع المتحرك باستمرار. يدوي: تتحكم في التركيز بدقة.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">صور شخصية في الساعة الذهبية</string>
+    <string name="scenario_golden_hour_subtitle">ضوء دافئ وجذاب عند الشروق/الغروب</string>
+    <string name="scenario_golden_hour_tip">ضع الشخص بحيث تكون الشمس خلفه للحصول على ضوء حافة طبيعي. استخدم عاكساً لملء الظلال.</string>
+
+    <string name="scenario_indoor_natural_title">الضوء الطبيعي في الداخل</string>
+    <string name="scenario_indoor_natural_subtitle">جلسات تصوير شخصي بضوء النافذة</string>
+    <string name="scenario_indoor_natural_tip">ضع الشخص بزاوية 45° من النافذة (إضاءة رامبرانت). أطفئ جميع الأضواء الاصطناعية للحصول على ألوان نقية.</string>
+
+    <string name="scenario_studio_portrait_title">صور شخصية في الاستوديو</string>
+    <string name="scenario_studio_portrait_subtitle">إعدادات إضاءة محكومة</string>
+    <string name="scenario_studio_portrait_tip">زامن الغالق أقل من سرعة مزامنة الفلاش (عادةً 1/200). ابدأ بـ ISO 100 واضبط قوة الفلاش.</string>
+
+    <string name="scenario_blue_hour_title">مناظر الساعة الزرقاء</string>
+    <string name="scenario_blue_hour_subtitle">سحر 20–40 دقيقة بعد الغروب</string>
+    <string name="scenario_blue_hour_tip">استخدم حاملاً ثلاثياً وضغطة عن بُعد. توازن اللون تنغستن يعزز المسحة الزرقاء لمظهر درامي.</string>
+
+    <string name="scenario_waterfall_title">شلالات حريرية</string>
+    <string name="scenario_waterfall_subtitle">حركة المياه بالتعرض الطويل</string>
+    <string name="scenario_waterfall_tip">استخدم مرشح ND في الإضاءة الساطعة. يظهر تأثير \"السكر القطني\" عند تعرض 1–2 ثانية.</string>
+
+    <string name="scenario_golden_landscape_title">مناظر الساعة الذهبية</string>
+    <string name="scenario_golden_landscape_subtitle">ضوء دافئ ودرامي على التضاريس</string>
+    <string name="scenario_golden_landscape_tip">احضر قبل 30 دقيقة من الساعة الذهبية. استكشف المواقع مسبقاً — الضوء يتغير في دقائق.</string>
+
+    <string name="scenario_freeze_motion_title">تجميد الحركة السريعة</string>
+    <string name="scenario_freeze_motion_subtitle">لقطات حركة واضحة</string>
+    <string name="scenario_freeze_motion_tip">استخدم وضع التصوير المتسلسل وتابع الموضوعات المتحركة. AF التتبع بالذكاء الاصطناعي يُحدث فرقاً كبيراً هنا.</string>
+
+    <string name="scenario_panning_title">التتبع مع ضبابية الحركة</string>
+    <string name="scenario_panning_subtitle">ضبابية السرعة مع موضوع حاد</string>
+    <string name="scenario_panning_tip">تابع الموضوع بسلاسة واضغط الغالق في منتصف الحركة. يحتاج إلى تدريب — صوّر بالوضع المتسلسل.</string>
+
+    <string name="scenario_sports_outdoor_title">الرياضة في الهواء الطلق</string>
+    <string name="scenario_sports_outdoor_subtitle">رياضات الملاعب والملاعب المسقوفة نهاراً</string>
+    <string name="scenario_sports_outdoor_tip">ضع نفسك بحيث تكون الشمس خلفك. استخدم عدسة تيلي طويلة (200–600mm) للقطات مضغوطة.</string>
+
+    <string name="scenario_milky_way_title">درب التبانة</string>
+    <string name="scenario_milky_way_subtitle">قلب المجرة في الليالي الصافية</string>
+    <string name="scenario_milky_way_tip">استخدم «قاعدة 500» — اقسم 500 على البعد البؤري = الثواني القصوى قبل ظهور مسارات النجوم.</string>
+
+    <string name="scenario_city_night_title">المدينة ليلاً</string>
+    <string name="scenario_city_night_subtitle">مناظر المدينة الليلية ومسارات الضوء</string>
+    <string name="scenario_city_night_tip">انتظر الشفق المدني — أضواء المدينة والسماء الزرقاء تتوازن بشكل جميل نحو 20 دقيقة بعد الغروب.</string>
+
+    <string name="scenario_light_painting_title">الرسم بالضوء</string>
+    <string name="scenario_light_painting_subtitle">تعرض طويل إبداعي بأدوات الضوء</string>
+    <string name="scenario_light_painting_tip">ارتدِ ملابس داكنة حتى لا تظهر في الصورة. استخدم مصباحاً صغيراً للعمل التفصيلي.</string>
+
+    <string name="scenario_wedding_reception_title">حفل الزفاف</string>
+    <string name="scenario_wedding_reception_subtitle">فعاليات داخلية بإضاءة مختلطة</string>
+    <string name="scenario_wedding_reception_tip">ارتدّ الفلاش على السقف للحصول على ملء يبدو طبيعياً. صوّر بـ RAW — الإضاءة المختلطة صعبة الضبط في الكاميرا.</string>
+
+    <string name="scenario_concert_title">الحفلات الموسيقية والأداء الحي</string>
+    <string name="scenario_concert_subtitle">إضاءة المسرح، منتجون سريعو الحركة</string>
+    <string name="scenario_concert_tip">تسمح معظم الأماكن بالكاميرات خلال الأغاني الثلاث الأولى فقط. استكشف الإضاءة أثناء التدريب الصوتي.</string>
+
+    <string name="scenario_corporate_title">الفعاليات المؤسسية</string>
+    <string name="scenario_corporate_subtitle">مؤتمرات، صور رسمية، جلسات حوارية</string>
+    <string name="scenario_corporate_tip">سلّم الصور سريعاً — يحتاج العملاء في الغالب إلى نشر منشورات في نفس اليوم. افرز الصور بحزم في الميدان.</string>
+
+    <string name="scenario_sunny_street_title">التصوير الميداني في يوم مشمس</string>
+    <string name="scenario_sunny_street_subtitle">تصوير حضري في ضوء النهار الساطع</string>
+    <string name="scenario_sunny_street_tip">قاعدة Sunny 16: في يوم مشمس عند f/16، سرعة الغالق = 1/ISO. استخدم «التركيز المناطقي» للتصوير من الخصر.</string>
+
+    <string name="scenario_rainy_street_title">التصوير الميداني في يوم ممطر</string>
+    <string name="scenario_rainy_street_subtitle">انعكاسات ومشاهد مبللة بجو خاص</string>
+    <string name="scenario_rainy_street_tip">صوّر من زاوية منخفضة لالتقاط انعكاسات البُرك. الضوء الغائم ناعم بطبيعته — رائع لألوان الشارع.</string>
+
+    <string name="scenario_night_street_title">التصوير الميداني ليلاً</string>
+    <string name="scenario_night_street_subtitle">لافتات النيون، البارات والحياة الليلية الحضرية</string>
+    <string name="scenario_night_street_tip">تقبّل الحبيبات. ضوضاء ISO العالية ليلاً تمنح مظهراً سينمائياً — اضبط التعرض للإضاءات لا للظلال.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">إعادة المحاولة</string>
+    <string name="error_load_failed">تعذّر تحميل البيانات. يرجى المحاولة مرة أخرى.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">فتحة العدسة</string>
+    <string name="setting_shutter">سرعة الغالق</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">توازن الأبيض</string>
+    <string name="setting_focus">وضع التركيز</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">غائم</string>
+    <string name="wb_daylight">ضوء النهار</string>
+    <string name="wb_flash_5500k">فلاش / 5500K</string>
+    <string name="wb_tungsten_3200k">تنغستن / 3200K</string>
+    <string name="wb_shade_7000k">ظل / 7000K</string>
+    <string name="wb_auto">تلقائي</string>
+    <string name="wb_auto_3500k">تلقائي / 3500K</string>
+    <string name="wb_fluorescent_4200k">فلوري / 4200K</string>
+    <string name="wb_tungsten_2700k">تنغستن / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">AF أحادي</string>
+    <string name="focus_manual_inf">يدوي / ∞</string>
+    <string name="focus_manual">يدوي</string>
+    <string name="focus_continuous_af">AF مستمر</string>
+    <string name="focus_zone_pre">منطقة / تركيز مسبق</string>
+</resources>

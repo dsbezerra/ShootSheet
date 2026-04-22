@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Perpustakaan Skenario</string>
+    <string name="home_subtitle">Pengaturan kamera untuk setiap situasi</string>
+    <string name="search_placeholder">Cari skenario\u2026</string>
+    <string name="section_categories">Kategori</string>
+    <string name="search_no_results">Tidak ada hasil untuk \"%1$s\"</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">Jelajahi</string>
+    <string name="tab_favorites">Favorit</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">Favorit</string>
+    <string name="favorites_empty_title">Belum ada favorit</string>
+    <string name="favorites_empty_body">Ketuk \u2665 pada lembar referensi mana pun untuk menyimpannya di sini agar cepat diakses di lapangan.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">Kategori</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">Pengaturan Kamera</string>
+    <string name="detail_camera_settings_hint">Ketuk pengaturan mana pun untuk mengetahui lebih lanjut</string>
+    <string name="detail_pro_tip_label">TIPS PRO</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">Cari</string>
+    <string name="cd_clear">Hapus pencarian</string>
+    <string name="cd_close">Tutup</string>
+    <string name="cd_info">Informasi lanjut</string>
+    <string name="cd_back">Kembali</string>
+    <string name="cd_add_favorite">Tambahkan ke favorit</string>
+    <string name="cd_remove_favorite">Hapus dari favorit</string>
+    <string name="cd_toggle_favorite">Alihkan favorit</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d hasil</item>
+        <item quantity="other">%1$d hasil</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="one">%1$d skenario</item>
+        <item quantity="other">%1$d skenario</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="one">%1$d skenario tersimpan</item>
+        <item quantity="other">%1$d skenario tersimpan</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">Potret</string>
+    <string name="category_landscapes_label">Lanskap</string>
+    <string name="category_action_label">Aksi &amp; Olahraga</string>
+    <string name="category_night_label">Malam &amp; Astro</string>
+    <string name="category_events_label">Acara</string>
+    <string name="category_street_label">Street</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">Apertur (f-stop)</string>
+    <string name="tooltip_aperture_body">Mengontrol kedalaman bidang dan masukan cahaya. Angka f rendah (f/1.4) = terbuka lebar = fokus dangkal + cahaya lebih banyak. Angka tinggi (f/16) = bukaan kecil = fokus dalam + cahaya lebih sedikit.</string>
+    <string name="tooltip_shutter_title">Kecepatan Rana</string>
+    <string name="tooltip_shutter_body">Berapa lama sensor terekspos. Kecepatan tinggi (1/1000d) membekukan gerakan. Kecepatan lambat (1/30d) menciptakan blur. Di bawah 1/60d dipegang tangan menyebabkan goyangan kamera — gunakan tripod.</string>
+    <string name="tooltip_iso_title">Sensitivitas ISO</string>
+    <string name="tooltip_iso_body">Memperkuat sinyal sensor. ISO 100 = bersih, tanpa noise. ISO 6400+ = terang tapi berisik/berbintik. Selalu gunakan ISO terendah yang diizinkan adegan.</string>
+    <string name="tooltip_wb_title">White Balance</string>
+    <string name="tooltip_wb_body">Menyesuaikan suhu warna agar putih tampak netral. \"Berawan\" menghangatkan gambar (~6500K). \"Tungsten\" mendinginkannya (~3200K). Memotret dalam RAW memungkinkan perubahan nanti.</string>
+    <string name="tooltip_focus_title">Mode Fokus</string>
+    <string name="tooltip_focus_body">AF Tunggal (AF-S): mengunci fokus saat tombol rana ditekan setengah — ideal untuk subjek diam. AF Kontinu (AF-C): terus melacak subjek bergerak. Manual: Anda mengontrol fokus dengan presisi.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">Potret Golden Hour</string>
+    <string name="scenario_golden_hour_subtitle">Cahaya hangat nan indah saat matahari terbit/terbenam</string>
+    <string name="scenario_golden_hour_tip">Posisikan subjek dengan matahari di belakang untuk cahaya tepi alami. Gunakan reflektor untuk mengisi bayangan.</string>
+
+    <string name="scenario_indoor_natural_title">Cahaya Alami dalam Ruangan</string>
+    <string name="scenario_indoor_natural_subtitle">Sesi potret dengan cahaya jendela</string>
+    <string name="scenario_indoor_natural_tip">Tempatkan subjek 45° dari jendela (pencahayaan Rembrandt). Matikan semua lampu buatan untuk warna yang bersih.</string>
+
+    <string name="scenario_studio_portrait_title">Potret Studio</string>
+    <string name="scenario_studio_portrait_subtitle">Pengaturan pencahayaan yang terkontrol</string>
+    <string name="scenario_studio_portrait_tip">Sinkronkan rana di bawah kecepatan sinkronisasi flash (biasanya 1/200). Mulai dengan ISO 100 dan sesuaikan daya flash.</string>
+
+    <string name="scenario_blue_hour_title">Lanskap Blue Hour</string>
+    <string name="scenario_blue_hour_subtitle">Keajaiban 20–40 menit setelah matahari terbenam</string>
+    <string name="scenario_blue_hour_tip">Gunakan tripod dan pelepas rana jarak jauh. WB Tungsten memperkuat warna biru untuk tampilan dramatis.</string>
+
+    <string name="scenario_waterfall_title">Air Terjun Sutra</string>
+    <string name="scenario_waterfall_subtitle">Gerakan air dengan eksposur panjang</string>
+    <string name="scenario_waterfall_tip">Gunakan filter ND dalam kondisi terang. Tampilan \"kapas gula\" muncul di sekitar eksposur 1–2 detik.</string>
+
+    <string name="scenario_golden_landscape_title">Lanskap Golden Hour</string>
+    <string name="scenario_golden_landscape_subtitle">Cahaya hangat yang dramatis di atas medan</string>
+    <string name="scenario_golden_landscape_tip">Tiba 30 menit sebelum golden hour. Survei lokasi terlebih dahulu — cahaya berubah dalam hitungan menit.</string>
+
+    <string name="scenario_freeze_motion_title">Membekukan Gerakan Cepat</string>
+    <string name="scenario_freeze_motion_subtitle">Foto aksi yang tajam</string>
+    <string name="scenario_freeze_motion_tip">Gunakan mode burst dan ikuti subjek yang bergerak. AF pelacakan AI membuat perbedaan besar di sini.</string>
+
+    <string name="scenario_panning_title">Panning Blur Gerakan</string>
+    <string name="scenario_panning_subtitle">Blur kecepatan dengan subjek tajam</string>
+    <string name="scenario_panning_tip">Ikuti subjek dengan mulus dan tekan rana di tengah gerakan. Perlu latihan — foto dalam mode burst.</string>
+
+    <string name="scenario_sports_outdoor_title">Olahraga Luar Ruangan</string>
+    <string name="scenario_sports_outdoor_subtitle">Olahraga lapangan &amp; lapangan pada siang hari</string>
+    <string name="scenario_sports_outdoor_tip">Posisikan diri untuk memotret dengan matahari di belakang. Gunakan lensa panjang (200–600mm) untuk bidikan rapat.</string>
+
+    <string name="scenario_milky_way_title">Bima Sakti</string>
+    <string name="scenario_milky_way_subtitle">Inti galaksi di malam yang cerah</string>
+    <string name="scenario_milky_way_tip">Gunakan \"aturan 500\" — bagi 500 dengan panjang fokus = detik maksimum sebelum jejak bintang muncul.</string>
+
+    <string name="scenario_city_night_title">Kota di Malam Hari</string>
+    <string name="scenario_city_night_subtitle">Pemandangan malam perkotaan &amp; jejak cahaya</string>
+    <string name="scenario_city_night_tip">Tunggu senja sipil — lampu kota dan langit biru seimbang indah sekitar 20 menit setelah matahari terbenam.</string>
+
+    <string name="scenario_light_painting_title">Melukis dengan Cahaya</string>
+    <string name="scenario_light_painting_subtitle">Eksposur panjang kreatif dengan alat cahaya</string>
+    <string name="scenario_light_painting_tip">Kenakan pakaian gelap agar tidak terlihat dalam foto. Gunakan senter kecil untuk pekerjaan detail.</string>
+
+    <string name="scenario_wedding_reception_title">Resepsi Pernikahan</string>
+    <string name="scenario_wedding_reception_subtitle">Acara dalam ruangan dengan pencahayaan campuran</string>
+    <string name="scenario_wedding_reception_tip">Pantulkan flash ke langit-langit untuk isian yang terlihat alami. Foto dalam RAW — cahaya campuran sulit ditangani dalam kamera.</string>
+
+    <string name="scenario_concert_title">Konser &amp; Musik Live</string>
+    <string name="scenario_concert_subtitle">Pencahayaan panggung, performer yang cepat</string>
+    <string name="scenario_concert_tip">Sebagian besar tempat hanya mengizinkan kamera untuk 3 lagu pertama. Perhatikan pencahayaan saat soundcheck.</string>
+
+    <string name="scenario_corporate_title">Acara Korporat</string>
+    <string name="scenario_corporate_subtitle">Konferensi, headshot, panel</string>
+    <string name="scenario_corporate_tip">Kirimkan gambar cepat — klien sering membutuhkan posting media sosial di hari yang sama. Pilih foto secara agresif di lapangan.</string>
+
+    <string name="scenario_sunny_street_title">Street di Hari Cerah</string>
+    <string name="scenario_sunny_street_subtitle">Pemotretan perkotaan di siang hari yang terang</string>
+    <string name="scenario_sunny_street_tip">Aturan Sunny 16: pada hari cerah di f/16, rana = 1/ISO. Gunakan \"fokus zona\" untuk memotret dari pinggang.</string>
+
+    <string name="scenario_rainy_street_title">Street di Hari Hujan</string>
+    <string name="scenario_rainy_street_subtitle">Pantulan &amp; pemandangan basah yang dramatis</string>
+    <string name="scenario_rainy_street_tip">Foto dari bawah untuk menangkap pantulan di genangan. Cahaya mendung secara alami lembut — bagus untuk warna jalan.</string>
+
+    <string name="scenario_night_street_title">Street di Malam Hari</string>
+    <string name="scenario_night_street_subtitle">Tanda neon, bar &amp; kehidupan kota larut malam</string>
+    <string name="scenario_night_street_tip">Terima grain. Noise ISO tinggi di malam hari terasa sinematik — ekspos untuk highlight, bukan bayangan.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">Coba lagi</string>
+    <string name="error_load_failed">Tidak dapat memuat data. Silakan coba lagi.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">Apertur</string>
+    <string name="setting_shutter">Kecepatan Rana</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">White Balance</string>
+    <string name="setting_focus">Mode Fokus</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">Berawan</string>
+    <string name="wb_daylight">Siang hari</string>
+    <string name="wb_flash_5500k">Flash / 5500K</string>
+    <string name="wb_tungsten_3200k">Tungsten / 3200K</string>
+    <string name="wb_shade_7000k">Bayangan / 7000K</string>
+    <string name="wb_auto">Otomatis</string>
+    <string name="wb_auto_3500k">Otomatis / 3500K</string>
+    <string name="wb_fluorescent_4200k">Fluoresen / 4200K</string>
+    <string name="wb_tungsten_2700k">Tungsten / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">AF Tunggal</string>
+    <string name="focus_manual_inf">Manual / ∞</string>
+    <string name="focus_manual">Manual</string>
+    <string name="focus_continuous_af">AF Kontinu</string>
+    <string name="focus_zone_pre">Zona / Pra-fokus</string>
+</resources>

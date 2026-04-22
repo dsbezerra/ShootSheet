@@ -41,7 +41,7 @@
 
     <!-- Detail screen -->
     <string name="detail_camera_settings_title">Camera Settings</string>
-    <string name="detail_camera_settings_hint">Tap any setting to see it on the lens</string>
+    <string name="detail_camera_settings_hint">Tap any setting to learn more</string>
     <string name="detail_pro_tip_label">PRO TIP</string>
 
     <!-- Content descriptions (accessibility) -->

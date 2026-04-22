@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Senaryo Kütüphanesi</string>
+    <string name="home_subtitle">Her durum için kamera ayarları</string>
+    <string name="search_placeholder">Senaryo ara\u2026</string>
+    <string name="section_categories">Kategoriler</string>
+    <string name="search_no_results">\"%1$s\" için sonuç bulunamadı</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">Keşfet</string>
+    <string name="tab_favorites">Favoriler</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">Favoriler</string>
+    <string name="favorites_empty_title">Henüz favori yok</string>
+    <string name="favorites_empty_body">Sahada hızlı erişim için herhangi bir kopya kağıdında \u2665 simgesine dokunarak buraya kaydedin.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">Kategori</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">Kamera Ayarları</string>
+    <string name="detail_camera_settings_hint">Daha fazla bilgi için herhangi bir ayara dokunun</string>
+    <string name="detail_pro_tip_label">PRO İPUCU</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">Ara</string>
+    <string name="cd_clear">Aramayı temizle</string>
+    <string name="cd_close">Kapat</string>
+    <string name="cd_info">Daha fazla bilgi</string>
+    <string name="cd_back">Geri</string>
+    <string name="cd_add_favorite">Favorilere ekle</string>
+    <string name="cd_remove_favorite">Favorilerden kaldır</string>
+    <string name="cd_toggle_favorite">Favoriyi değiştir</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d sonuç</item>
+        <item quantity="other">%1$d sonuç</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="one">%1$d senaryo</item>
+        <item quantity="other">%1$d senaryo</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="one">%1$d kaydedilmiş senaryo</item>
+        <item quantity="other">%1$d kaydedilmiş senaryo</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">Portreler</string>
+    <string name="category_landscapes_label">Manzaralar</string>
+    <string name="category_action_label">Aksiyon ve Spor</string>
+    <string name="category_night_label">Gece ve Astro</string>
+    <string name="category_events_label">Etkinlikler</string>
+    <string name="category_street_label">Sokak</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">Diyafram (f-değeri)</string>
+    <string name="tooltip_aperture_body">Alan derinliğini ve ışık girişini kontrol eder. Düşük f değerleri (f/1.4) = geniş açık = sığ odak + daha fazla ışık. Yüksek değerler (f/16) = küçük açıklık = derin odak + daha az ışık.</string>
+    <string name="tooltip_shutter_title">Enstantane Hızı</string>
+    <string name="tooltip_shutter_body">Sensörün ne kadar süre açık kaldığı. Hızlı değerler (1/1000s) hareketi dondurur. Yavaş değerler (1/30s) bulanıklık yaratır. El tutarak 1/60s altı kamera titremesine yol açar — tripod kullanın.</string>
+    <string name="tooltip_iso_title">ISO Hassasiyeti</string>
+    <string name="tooltip_iso_body">Sensör sinyalini güçlendirir. ISO 100 = temiz, gürültüsüz. ISO 6400+ = parlak ama gürültülü/grenli. Her zaman sahnenin izin verdiği en düşük ISO\'yu kullanın.</string>
+    <string name="tooltip_wb_title">Beyaz Dengesi</string>
+    <string name="tooltip_wb_body">Beyazların nötr görünmesi için renk sıcaklığını ayarlar. \"Bulutlu\" görüntüyü ısıtır (~6500K). \"Tungsten\" soğutur (~3200K). RAW çekerek sonradan değiştirilebilir.</string>
+    <string name="tooltip_focus_title">Odak Modu</string>
+    <string name="tooltip_focus_body">Tek AF (AF-S): yarı basışta odağı kilitler — hareketsiz objeler için idealdir. Sürekli AF (AF-C): hareket eden objeyi sürekli takip eder. Manuel: odağı kendiniz hassasça kontrol edersiniz.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">Altın Saat Portreleri</string>
+    <string name="scenario_golden_hour_subtitle">Gün doğumu/batımında sıcak, yağlıboya ışık</string>
+    <string name="scenario_golden_hour_tip">Doğal kenar ışığı için özneyi güneş arkada olacak şekilde konumlandırın. Gölgeleri doldurmak için reflektör kullanın.</string>
+
+    <string name="scenario_indoor_natural_title">İç Mekan Doğal Işık</string>
+    <string name="scenario_indoor_natural_subtitle">Pencere ışıklı portre seansları</string>
+    <string name="scenario_indoor_natural_tip">Özneyi pencereye 45° açıyla yerleştirin (Rembrandt aydınlatması). Temiz renk için tüm yapay ışıkları kapatın.</string>
+
+    <string name="scenario_studio_portrait_title">Stüdyo Portreleri</string>
+    <string name="scenario_studio_portrait_subtitle">Kontrollü aydınlatma kurulumları</string>
+    <string name="scenario_studio_portrait_tip">Enstantaneyi flaş senkronizasyon hızının altında senkronize edin (genellikle 1/200). ISO 100\'den başlayarak flaş gücünü ayarlayın.</string>
+
+    <string name="scenario_blue_hour_title">Mavi Saat Manzaraları</string>
+    <string name="scenario_blue_hour_subtitle">Günbatımından 20–40 dakika sonraki büyü</string>
+    <string name="scenario_blue_hour_tip">Tripod ve uzaktan enstantane kullanın. Tungsten BD, kasvetli bir görünüm için mavi tonu vurgular.</string>
+
+    <string name="scenario_waterfall_title">İpeksi Şelaleler</string>
+    <string name="scenario_waterfall_subtitle">Uzun pozlamada su hareketi</string>
+    <string name="scenario_waterfall_tip">Parlak koşullarda ND filtre kullanın. \"Pamuk şekeri\" görünümü 1–2 saniyelik pozlamalarda ortaya çıkar.</string>
+
+    <string name="scenario_golden_landscape_title">Altın Saat Manzaraları</string>
+    <string name="scenario_golden_landscape_subtitle">Arazide dramatik sıcak ışık</string>
+    <string name="scenario_golden_landscape_tip">Altın saatten 30 dakika önce gelin. Lokasyonları önceden keşfedin — ışık dakikalar içinde değişir.</string>
+
+    <string name="scenario_freeze_motion_title">Hızlı Hareketi Dondurun</string>
+    <string name="scenario_freeze_motion_subtitle">Net aksiyon çekimleri</string>
+    <string name="scenario_freeze_motion_tip">Seri çekim modunu kullanın ve hareket eden özneleri takip edin. Yapay zeka takip AF burada büyük fark yaratır.</string>
+
+    <string name="scenario_panning_title">Hareket Bulanıklığıyla Panning</string>
+    <string name="scenario_panning_subtitle">Net özneyle hız bulanıklığı</string>
+    <string name="scenario_panning_tip">Özneyi akıcıca takip edin ve hareketin ortasında enstantaneye basın. Pratik gerektirir — seri çekim yapın.</string>
+
+    <string name="scenario_sports_outdoor_title">Açık Hava Sporları</string>
+    <string name="scenario_sports_outdoor_subtitle">Gündüz saha ve kort sporları</string>
+    <string name="scenario_sports_outdoor_tip">Güneşi arkanıza alarak çekim yapacak konuma geçin. Sıkı kırpmalar için uzun tele lens (200–600mm) kullanın.</string>
+
+    <string name="scenario_milky_way_title">Samanyolu</string>
+    <string name="scenario_milky_way_subtitle">Açık gecelerde galaksinin çekirdeği</string>
+    <string name="scenario_milky_way_tip">\"500 kuralını\" kullanın — 500\'ü odak uzaklığına bölün = yıldız izleri belirmeden önceki maksimum saniye.</string>
+
+    <string name="scenario_city_night_title">Gece Şehri</string>
+    <string name="scenario_city_night_subtitle">Kentsel gece manzaraları ve ışık izleri</string>
+    <string name="scenario_city_night_tip">Sivil alacakaranlığı bekleyin — günbatımından yaklaşık 20 dakika sonra şehir ışıkları ve mavi gökyüzü güzel bir denge kurar.</string>
+
+    <string name="scenario_light_painting_title">Işıkla Boyama</string>
+    <string name="scenario_light_painting_subtitle">Işık araçlarıyla yaratıcı uzun pozlama</string>
+    <string name="scenario_light_painting_tip">Karede görünmemek için koyu renkli giysiler giyin. Ayrıntılı çalışma için küçük bir el feneri kullanın.</string>
+
+    <string name="scenario_wedding_reception_title">Düğün Resepsiyonu</string>
+    <string name="scenario_wedding_reception_subtitle">İç mekan karışık aydınlatmalı etkinlikler</string>
+    <string name="scenario_wedding_reception_tip">Doğal görünümlü dolgu ışığı için flaşı tavana yansıtın. RAW çekin — karışık ışık kamerada ayarlamak zordur.</string>
+
+    <string name="scenario_concert_title">Konser ve Canlı Müzik</string>
+    <string name="scenario_concert_subtitle">Sahne ışıklandırması, hızlı performansçılar</string>
+    <string name="scenario_concert_tip">Çoğu mekan yalnızca ilk 3 şarkı için kameraya izin verir. Ses kontrolü sırasında aydınlatmayı inceleyin.</string>
+
+    <string name="scenario_corporate_title">Kurumsal Etkinlikler</string>
+    <string name="scenario_corporate_subtitle">Konferanslar, kurumsal portreler, paneller</string>
+    <string name="scenario_corporate_tip">Görselleri hızlı teslim edin — müşteriler genellikle aynı gün sosyal medya paylaşımları ister. Sahada agresif biçimde seçim yapın.</string>
+
+    <string name="scenario_sunny_street_title">Güneşli Günde Sokak</string>
+    <string name="scenario_sunny_street_subtitle">Parlak kentsel gün ışığında çekim</string>
+    <string name="scenario_sunny_street_tip">Sunny 16 kuralı: güneşli bir günde f/16\'da enstantane = 1/ISO. Kalçadan çekim için \"bölge odağı\" kullanın.</string>
+
+    <string name="scenario_rainy_street_title">Yağmurlu Günde Sokak</string>
+    <string name="scenario_rainy_street_subtitle">Yansımalar ve atmosferik ıslak sahneler</string>
+    <string name="scenario_rainy_street_tip">Birikintilerdeki yansımaları yakalamak için alçaktan çekin. Bulutlu ışık doğal olarak yumuşaktır — sokak renkleri için mükemmel.</string>
+
+    <string name="scenario_night_street_title">Gece Sokağı</string>
+    <string name="scenario_night_street_subtitle">Neon tabelalar, barlar ve geç şehir yaşamı</string>
+    <string name="scenario_night_street_tip">Grenimi benimseyin. Geceleri yüksek ISO gürültüsü sinematik hissettirer — gölgeler için değil, parlak alanlar için pozlayın.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">Yeniden dene</string>
+    <string name="error_load_failed">Veriler yüklenemedi. Lütfen tekrar deneyin.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">Diyafram</string>
+    <string name="setting_shutter">Enstantane Hızı</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">Beyaz Dengesi</string>
+    <string name="setting_focus">Odak Modu</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">Bulutlu</string>
+    <string name="wb_daylight">Gün ışığı</string>
+    <string name="wb_flash_5500k">Flaş / 5500K</string>
+    <string name="wb_tungsten_3200k">Tungsten / 3200K</string>
+    <string name="wb_shade_7000k">Gölge / 7000K</string>
+    <string name="wb_auto">Otomatik</string>
+    <string name="wb_auto_3500k">Otomatik / 3500K</string>
+    <string name="wb_fluorescent_4200k">Floresan / 4200K</string>
+    <string name="wb_tungsten_2700k">Tungsten / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">Tek AF</string>
+    <string name="focus_manual_inf">Manuel / ∞</string>
+    <string name="focus_manual">Manuel</string>
+    <string name="focus_continuous_af">Sürekli AF</string>
+    <string name="focus_zone_pre">Bölge / Ön odak</string>
+</resources>

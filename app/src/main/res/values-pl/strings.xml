@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Biblioteka Scenariuszy</string>
+    <string name="home_subtitle">Ustawienia aparatu na każdą okazję</string>
+    <string name="search_placeholder">Szukaj scenariuszy\u2026</string>
+    <string name="section_categories">Kategorie</string>
+    <string name="search_no_results">Brak wyników dla \"%1$s\"</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">Odkrywaj</string>
+    <string name="tab_favorites">Ulubione</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">Ulubione</string>
+    <string name="favorites_empty_title">Brak ulubionych</string>
+    <string name="favorites_empty_body">Dotknij \u2665 na dowolnej ściądze, aby zapisać ją tutaj dla szybkiego dostępu w terenie.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">Kategoria</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">Ustawienia Aparatu</string>
+    <string name="detail_camera_settings_hint">Dotknij dowolnego ustawienia, aby dowiedzieć się więcej</string>
+    <string name="detail_pro_tip_label">PORADA PRO</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">Szukaj</string>
+    <string name="cd_clear">Wyczyść wyszukiwanie</string>
+    <string name="cd_close">Zamknij</string>
+    <string name="cd_info">Więcej informacji</string>
+    <string name="cd_back">Wróć</string>
+    <string name="cd_add_favorite">Dodaj do ulubionych</string>
+    <string name="cd_remove_favorite">Usuń z ulubionych</string>
+    <string name="cd_toggle_favorite">Przełącz ulubione</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d wynik</item>
+        <item quantity="few">%1$d wyniki</item>
+        <item quantity="many">%1$d wyników</item>
+        <item quantity="other">%1$d wyników</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="one">%1$d scenariusz</item>
+        <item quantity="few">%1$d scenariusze</item>
+        <item quantity="many">%1$d scenariuszy</item>
+        <item quantity="other">%1$d scenariuszy</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="one">%1$d zapisany scenariusz</item>
+        <item quantity="few">%1$d zapisane scenariusze</item>
+        <item quantity="many">%1$d zapisanych scenariuszy</item>
+        <item quantity="other">%1$d zapisanych scenariuszy</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">Portrety</string>
+    <string name="category_landscapes_label">Krajobrazy</string>
+    <string name="category_action_label">Akcja i Sport</string>
+    <string name="category_night_label">Noc i Astro</string>
+    <string name="category_events_label">Eventy</string>
+    <string name="category_street_label">Street</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">Przysłona (f-stop)</string>
+    <string name="tooltip_aperture_body">Kontroluje głębię ostrości i ilość wpadającego światła. Małe liczby f (f/1.4) = szeroko otwarta = płytka głębia + więcej światła. Duże liczby (f/16) = małe otwarcie = duża głębia + mniej światła.</string>
+    <string name="tooltip_shutter_title">Czas naświetlania</string>
+    <string name="tooltip_shutter_body">Jak długo sensor jest eksponowany. Szybkie czasy (1/1000s) zamrażają ruch. Wolne (1/30s) tworzą rozmycie. Poniżej 1/60s z ręki powoduje poruszenie — użyj statywu.</string>
+    <string name="tooltip_iso_title">Czułość ISO</string>
+    <string name="tooltip_iso_body">Wzmacnia sygnał sensora. ISO 100 = czyste, bez szumów. ISO 6400+ = jasne, ale zaszumione/ziarniste. Zawsze używaj jak najniższego ISO, na jakie pozwala scena.</string>
+    <string name="tooltip_wb_title">Balans bieli</string>
+    <string name="tooltip_wb_body">Dostosowuje temperaturę barwową, by biel wyglądała neutralnie. \"Zachmurzenie\" ociepla obraz (~6500K). \"Żarówkowe\" chłodzi (~3200K). Zdjęcia RAW pozwalają zmienić to później.</string>
+    <string name="tooltip_focus_title">Tryb ostrości</string>
+    <string name="tooltip_focus_body">Pojedynczy AF (AF-S): blokuje ostrość przy półwciśnięciu spustu — idealny do nieruchomych obiektów. Śledzący AF (AF-C): ciągle śledzi ruchomy obiekt. Ręczny: precyzyjnie kontrolujesz ostrość.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">Portrety w Złotej Godzinie</string>
+    <string name="scenario_golden_hour_subtitle">Ciepłe, pochlebne światło o wschodzie/zachodzie słońca</string>
+    <string name="scenario_golden_hour_tip">Ustaw obiekt z słońcem za plecami, by uzyskać naturalne światło obrysu. Użyj reflektora do wypełnienia cieni.</string>
+
+    <string name="scenario_indoor_natural_title">Naturalne Światło w Pomieszczeniu</string>
+    <string name="scenario_indoor_natural_subtitle">Sesje portretowe z oświetleniem od okna</string>
+    <string name="scenario_indoor_natural_tip">Ustaw obiekt pod kątem 45° do okna (oświetlenie Rembrandta). Wyłącz wszystkie sztuczne światła dla czystych kolorów.</string>
+
+    <string name="scenario_studio_portrait_title">Portrety Studyjne</string>
+    <string name="scenario_studio_portrait_subtitle">Kontrolowane ustawienia oświetlenia</string>
+    <string name="scenario_studio_portrait_tip">Zsynchronizuj migawkę poniżej czasu synchronizacji lampy (zazwyczaj 1/200). Zacznij od ISO 100 i dostosuj moc lampy błyskowej.</string>
+
+    <string name="scenario_blue_hour_title">Krajobrazy w Niebieskiej Godzinie</string>
+    <string name="scenario_blue_hour_subtitle">Magia 20–40 minut po zachodzie słońca</string>
+    <string name="scenario_blue_hour_tip">Użyj statywu i zdalnego wyzwalacza. Balans bieli żarówkowy wzmacnia niebieski odcień dla nastrojowego wyglądu.</string>
+
+    <string name="scenario_waterfall_title">Jedwabiste Wodospady</string>
+    <string name="scenario_waterfall_subtitle">Ruch wody w długim naświetlaniu</string>
+    <string name="scenario_waterfall_tip">Użyj filtra ND w jasnym świetle. Efekt „waty cukrowej" pojawia się przy naświetlaniu 1–2 sekundy.</string>
+
+    <string name="scenario_golden_landscape_title">Krajobrazy w Złotej Godzinie</string>
+    <string name="scenario_golden_landscape_subtitle">Dramatyczne ciepłe światło na terenie</string>
+    <string name="scenario_golden_landscape_tip">Przyjedź 30 minut przed złotą godziną. Rozpoznaj lokacje wcześniej — światło zmienia się w ciągu minut.</string>
+
+    <string name="scenario_freeze_motion_title">Zamrażanie Szybkiego Ruchu</string>
+    <string name="scenario_freeze_motion_subtitle">Ostre zdjęcia akcji</string>
+    <string name="scenario_freeze_motion_tip">Używaj serii zdjęć i podążaj za ruchomymi obiektami. AF śledzenia z AI robi tu ogromną różnicę.</string>
+
+    <string name="scenario_panning_title">Panning z Rozmyciem Ruchu</string>
+    <string name="scenario_panning_subtitle">Rozmycie prędkości z ostrym obiektem</string>
+    <string name="scenario_panning_tip">Płynnie śledź obiekt i naciśnij spust w połowie ruchu. Wymaga ćwiczeń — fotografuj w serii.</string>
+
+    <string name="scenario_sports_outdoor_title">Sport na Świeżym Powietrzu</string>
+    <string name="scenario_sports_outdoor_subtitle">Dzienne sporty na boisku i korcie</string>
+    <string name="scenario_sports_outdoor_tip">Ustaw się tak, by słońce było za plecami. Użyj długiego teleobiektywu (200–600mm) do ciasnych ujęć.</string>
+
+    <string name="scenario_milky_way_title">Droga Mleczna</string>
+    <string name="scenario_milky_way_subtitle">Centrum galaktyki w bezchmurne noce</string>
+    <string name="scenario_milky_way_tip">Użyj „reguły 500" — podziel 500 przez ogniskową = maksymalna liczba sekund przed pojawieniem się smug gwiezdnych.</string>
+
+    <string name="scenario_city_night_title">Miasto Nocą</string>
+    <string name="scenario_city_night_subtitle">Miejskie nocne pejzaże i smugi świateł</string>
+    <string name="scenario_city_night_tip">Poczekaj na zmierzch cywilny — miejskie światła i niebieskie niebo pięknie się równoważą około 20 minut po zachodzie słońca.</string>
+
+    <string name="scenario_light_painting_title">Malowanie Światłem</string>
+    <string name="scenario_light_painting_subtitle">Kreatywne długie naświetlanie z narzędziami świetlnymi</string>
+    <string name="scenario_light_painting_tip">Noś ciemne ubrania, by nie pojawić się na zdjęciu. Użyj małej latarki do szczegółowej pracy.</string>
+
+    <string name="scenario_wedding_reception_title">Przyjęcie Weselne</string>
+    <string name="scenario_wedding_reception_subtitle">Imprezy w pomieszczeniach z mieszanym oświetleniem</string>
+    <string name="scenario_wedding_reception_tip">Odbij lampę od sufitu dla naturalnie wyglądającego wypełnienia. Fotografuj w RAW — mieszane oświetlenie trudno korygować w aparacie.</string>
+
+    <string name="scenario_concert_title">Koncerty i Muzyka Na Żywo</string>
+    <string name="scenario_concert_subtitle">Oświetlenie sceniczne, szybko poruszający się wykonawcy</string>
+    <string name="scenario_concert_tip">Większość miejsc zezwala na aparaty tylko przez pierwsze 3 piosenki. Zbadaj oświetlenie podczas próby dźwięku.</string>
+
+    <string name="scenario_corporate_title">Imprezy Firmowe</string>
+    <string name="scenario_corporate_subtitle">Konferencje, zdjęcia firmowe, panele</string>
+    <string name="scenario_corporate_tip">Dostarczaj zdjęcia szybko — klienci często potrzebują postów w mediach społecznościowych tego samego dnia. Agresywnie selekcjonuj zdjęcia w terenie.</string>
+
+    <string name="scenario_sunny_street_title">Ulica w Słoneczny Dzień</string>
+    <string name="scenario_sunny_street_subtitle">Fotografia miejska w jasnym świetle dziennym</string>
+    <string name="scenario_sunny_street_tip">Reguła Sunny 16: w słoneczny dzień przy f/16 czas migawki = 1/ISO. Używaj „ogniskowania strefowego" do fotografowania z biodra.</string>
+
+    <string name="scenario_rainy_street_title">Ulica w Deszczowy Dzień</string>
+    <string name="scenario_rainy_street_subtitle">Odbicia i nastrojowe mokre sceny</string>
+    <string name="scenario_rainy_street_tip">Fotografuj nisko, by uchwycić odbicia w kałużach. Zachmurzone światło jest naturalnie miękkie — świetne dla kolorów ulicznych.</string>
+
+    <string name="scenario_night_street_title">Ulica Nocą</string>
+    <string name="scenario_night_street_subtitle">Neony, bary i nocne miejskie życie</string>
+    <string name="scenario_night_street_tip">Zaakceptuj ziarno. Wysoki szum ISO nocą daje kinematograficzny charakter — eksponuj na jasne partie, nie cienie.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">Spróbuj ponownie</string>
+    <string name="error_load_failed">Nie można załadować danych. Spróbuj ponownie.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">Przysłona</string>
+    <string name="setting_shutter">Czas naświetlania</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">Balans bieli</string>
+    <string name="setting_focus">Tryb ostrości</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">Zachmurzenie</string>
+    <string name="wb_daylight">Światło dzienne</string>
+    <string name="wb_flash_5500k">Lampa błyskowa / 5500K</string>
+    <string name="wb_tungsten_3200k">Żarówkowe / 3200K</string>
+    <string name="wb_shade_7000k">Cień / 7000K</string>
+    <string name="wb_auto">Auto</string>
+    <string name="wb_auto_3500k">Auto / 3500K</string>
+    <string name="wb_fluorescent_4200k">Fluorescencyjne / 4200K</string>
+    <string name="wb_tungsten_2700k">Żarówkowe / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">Pojedynczy AF</string>
+    <string name="focus_manual_inf">Ręczny / ∞</string>
+    <string name="focus_manual">Ręczny</string>
+    <string name="focus_continuous_af">Śledzący AF</string>
+    <string name="focus_zone_pre">Strefa / Prefokus</string>
+</resources>

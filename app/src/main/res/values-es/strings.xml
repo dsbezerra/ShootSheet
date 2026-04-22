@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Biblioteca de Escenas</string>
+    <string name="home_subtitle">Ajustes de cámara para cada situación</string>
+    <string name="search_placeholder">Buscar escenas\u2026</string>
+    <string name="section_categories">Categorías</string>
+    <string name="search_no_results">Sin resultados para \"%1$s\"</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">Explorar</string>
+    <string name="tab_favorites">Favoritos</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">Favoritos</string>
+    <string name="favorites_empty_title">Sin favoritos aún</string>
+    <string name="favorites_empty_body">Toca el \u2665 en cualquier hoja de referencia para guardarlo aquí y acceder rápidamente en el campo.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">Categoría</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">Ajustes de Cámara</string>
+    <string name="detail_camera_settings_hint">Toca cualquier ajuste para saber más</string>
+    <string name="detail_pro_tip_label">CONSEJO PRO</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">Buscar</string>
+    <string name="cd_clear">Limpiar búsqueda</string>
+    <string name="cd_close">Cerrar</string>
+    <string name="cd_info">Más información</string>
+    <string name="cd_back">Volver</string>
+    <string name="cd_add_favorite">Añadir a favoritos</string>
+    <string name="cd_remove_favorite">Eliminar de favoritos</string>
+    <string name="cd_toggle_favorite">Alternar favorito</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d resultado</item>
+        <item quantity="other">%1$d resultados</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="one">%1$d escena</item>
+        <item quantity="other">%1$d escenas</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="one">%1$d escena guardada</item>
+        <item quantity="other">%1$d escenas guardadas</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">Retratos</string>
+    <string name="category_landscapes_label">Paisajes</string>
+    <string name="category_action_label">Acción y Deportes</string>
+    <string name="category_night_label">Noche y Astro</string>
+    <string name="category_events_label">Eventos</string>
+    <string name="category_street_label">Calle</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">Apertura (f-stop)</string>
+    <string name="tooltip_aperture_body">Controla la profundidad de campo y la entrada de luz. Números f bajos (f/1.4) = apertura amplia = enfoque superficial + más luz. Números altos (f/16) = apertura pequeña = enfoque profundo + menos luz.</string>
+    <string name="tooltip_shutter_title">Velocidad de Obturación</string>
+    <string name="tooltip_shutter_body">Tiempo que el sensor está expuesto. Velocidades rápidas (1/1000s) congelan el movimiento. Velocidades lentas (1/30s) crean desenfoque. Por debajo de 1/60s sin trípode causa trepidación.</string>
+    <string name="tooltip_iso_title">Sensibilidad ISO</string>
+    <string name="tooltip_iso_body">Amplifica la señal del sensor. ISO 100 = limpio, sin ruido. ISO 6400+ = brillante pero con ruido/grano. Usa siempre el ISO más bajo que la escena permita.</string>
+    <string name="tooltip_wb_title">Balance de Blancos</string>
+    <string name="tooltip_wb_body">Ajusta la temperatura de color para que los blancos aparezcan neutros. \"Nublado\" calienta la imagen (~6500K). \"Tungsteno\" la enfría (~3200K). Disparar en RAW permite cambiarlo después.</string>
+    <string name="tooltip_focus_title">Modo de Enfoque</string>
+    <string name="tooltip_focus_body">AF Único (AF-S): fija el foco al presionar a medias el disparador — ideal para sujetos estáticos. AF Continuo (AF-C): sigue a un sujeto en movimiento. Manual: tú controlas el enfoque con precisión.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">Retratos en Hora Dorada</string>
+    <string name="scenario_golden_hour_subtitle">Luz cálida y favorecedora al amanecer/atardecer</string>
+    <string name="scenario_golden_hour_tip">Coloca al sujeto con el sol detrás para obtener luz de contorno natural. Usa un reflector para rellenar las sombras.</string>
+
+    <string name="scenario_indoor_natural_title">Luz Natural en Interiores</string>
+    <string name="scenario_indoor_natural_subtitle">Sesiones de retrato con luz de ventana</string>
+    <string name="scenario_indoor_natural_tip">Coloca al sujeto a 45° de la ventana (iluminación Rembrandt). Apaga todas las luces artificiales para un color limpio.</string>
+
+    <string name="scenario_studio_portrait_title">Retratos de Estudio</string>
+    <string name="scenario_studio_portrait_subtitle">Configuraciones de iluminación controlada</string>
+    <string name="scenario_studio_portrait_tip">Sincroniza el obturador por debajo de la velocidad de sincronización del flash (generalmente 1/200). Empieza con ISO 100 y ajusta la potencia del flash.</string>
+
+    <string name="scenario_blue_hour_title">Paisajes en Hora Azul</string>
+    <string name="scenario_blue_hour_subtitle">La magia de los 20–40 min después del atardecer</string>
+    <string name="scenario_blue_hour_tip">Usa trípode y disparador remoto. El balance en tungsteno amplifica el tono azul para un aspecto sombrío.</string>
+
+    <string name="scenario_waterfall_title">Cascadas de Seda</string>
+    <string name="scenario_waterfall_subtitle">Movimiento de agua en larga exposición</string>
+    <string name="scenario_waterfall_tip">Usa un filtro ND con mucha luz. El efecto de algodón de azúcar aparece con exposiciones de 1–2 segundos.</string>
+
+    <string name="scenario_golden_landscape_title">Paisajes en Hora Dorada</string>
+    <string name="scenario_golden_landscape_subtitle">Luz cálida y dramática sobre el terreno</string>
+    <string name="scenario_golden_landscape_tip">Llega 30 min antes de la hora dorada. Explora los lugares con antelación — la luz cambia en minutos.</string>
+
+    <string name="scenario_freeze_motion_title">Congelar Movimiento Rápido</string>
+    <string name="scenario_freeze_motion_subtitle">Fotos de acción nítidas</string>
+    <string name="scenario_freeze_motion_tip">Usa el modo ráfaga y sigue con la cámara a los sujetos en movimiento. El AF de seguimiento con IA marca una gran diferencia.</string>
+
+    <string name="scenario_panning_title">Barrido con Desenfoque</string>
+    <string name="scenario_panning_subtitle">Desenfoque de velocidad con sujeto nítido</string>
+    <string name="scenario_panning_tip">Sigue al sujeto con suavidad y presiona el disparador en medio del movimiento. Requiere práctica — dispara en ráfaga.</string>
+
+    <string name="scenario_sports_outdoor_title">Deportes al Aire Libre</string>
+    <string name="scenario_sports_outdoor_subtitle">Deportes de campo y pista durante el día</string>
+    <string name="scenario_sports_outdoor_tip">Posiciónate para disparar con el sol a tu espalda. Usa un teleobjetivo (200–600mm) para encuadres cerrados.</string>
+
+    <string name="scenario_milky_way_title">Vía Láctea</string>
+    <string name="scenario_milky_way_subtitle">El núcleo de la galaxia en noches despejadas</string>
+    <string name="scenario_milky_way_tip">Usa la «regla de los 500» — divide 500 entre la distancia focal = segundos máximos antes de que aparezcan trazos estelares.</string>
+
+    <string name="scenario_city_night_title">Ciudad de Noche</string>
+    <string name="scenario_city_night_subtitle">Paisajes urbanos nocturnos y trazos de luz</string>
+    <string name="scenario_city_night_tip">Espera al crepúsculo civil — las luces de la ciudad y el cielo azul se equilibran hermosamente unos 20 min después del atardecer.</string>
+
+    <string name="scenario_light_painting_title">Pintura con Luz</string>
+    <string name="scenario_light_painting_subtitle">Larga exposición creativa con herramientas de luz</string>
+    <string name="scenario_light_painting_tip">Viste ropa oscura para no aparecer en la foto. Usa una linterna pequeña para trabajo detallado.</string>
+
+    <string name="scenario_wedding_reception_title">Recepción de Bodas</string>
+    <string name="scenario_wedding_reception_subtitle">Eventos con iluminación mixta en interiores</string>
+    <string name="scenario_wedding_reception_tip">Rebota el flash en el techo para un relleno de aspecto natural. Dispara en RAW — la luz mixta es difícil de ajustar en cámara.</string>
+
+    <string name="scenario_concert_title">Conciertos y Música en Vivo</string>
+    <string name="scenario_concert_subtitle">Iluminación de escenario, intérpretes rápidos</string>
+    <string name="scenario_concert_tip">La mayoría de los locales permiten cámaras solo durante las primeras 3 canciones. Estudia la iluminación durante el ensayo de sonido.</string>
+
+    <string name="scenario_corporate_title">Eventos Corporativos</string>
+    <string name="scenario_corporate_subtitle">Conferencias, headshots, paneles</string>
+    <string name="scenario_corporate_tip">Entrega imágenes rápido — los clientes suelen necesitar publicaciones en redes el mismo día. Selecciona con rigor en el campo.</string>
+
+    <string name="scenario_sunny_street_title">Calle en Día Soleado</string>
+    <string name="scenario_sunny_street_subtitle">Fotografía urbana con luz diurna brillante</string>
+    <string name="scenario_sunny_street_tip">Regla Sunny 16: a f/16 en un día soleado, obturador = 1/ISO. Usa el «foco de zona» para disparar desde la cadera.</string>
+
+    <string name="scenario_rainy_street_title">Calle en Día Lluvioso</string>
+    <string name="scenario_rainy_street_subtitle">Reflejos y escenas húmedas con ambiente</string>
+    <string name="scenario_rainy_street_tip">Dispara bajo para capturar los reflejos en los charcos. La luz nublada es naturalmente suave — ideal para el color en calle.</string>
+
+    <string name="scenario_night_street_title">Calle de Noche</string>
+    <string name="scenario_night_street_subtitle">Letreros de neón, bares y vida nocturna urbana</string>
+    <string name="scenario_night_street_tip">Abraza el grano. El ruido de ISO alto de noche tiene aspecto cinematográfico — expón para las luces, no para las sombras.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">Reintentar</string>
+    <string name="error_load_failed">No se pudieron cargar los datos. Por favor, inténtalo de nuevo.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">Apertura</string>
+    <string name="setting_shutter">Velocidad de Obturación</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">Balance de Blancos</string>
+    <string name="setting_focus">Modo de Enfoque</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">Nublado</string>
+    <string name="wb_daylight">Luz del día</string>
+    <string name="wb_flash_5500k">Flash / 5500K</string>
+    <string name="wb_tungsten_3200k">Tungsteno / 3200K</string>
+    <string name="wb_shade_7000k">Sombra / 7000K</string>
+    <string name="wb_auto">Auto</string>
+    <string name="wb_auto_3500k">Auto / 3500K</string>
+    <string name="wb_fluorescent_4200k">Fluorescente / 4200K</string>
+    <string name="wb_tungsten_2700k">Tungsteno / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">AF Único</string>
+    <string name="focus_manual_inf">Manual / ∞</string>
+    <string name="focus_manual">Manual</string>
+    <string name="focus_continuous_af">AF Continuo</string>
+    <string name="focus_zone_pre">Zona / Pre-enfoque</string>
+</resources>

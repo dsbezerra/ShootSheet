@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">シナリオライブラリ</string>
+    <string name="home_subtitle">あらゆる場面に対応するカメラ設定</string>
+    <string name="search_placeholder">シナリオを検索\u2026</string>
+    <string name="section_categories">カテゴリ</string>
+    <string name="search_no_results">\"%1$s\" の結果がありません</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">探す</string>
+    <string name="tab_favorites">お気に入り</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">お気に入り</string>
+    <string name="favorites_empty_title">まだお気に入りがありません</string>
+    <string name="favorites_empty_body">任意のチートシートの \u2665 をタップして、フィールドでの素早いアクセスのためにここに保存します。</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">カテゴリ</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">カメラ設定</string>
+    <string name="detail_camera_settings_hint">設定をタップして詳細を確認</string>
+    <string name="detail_pro_tip_label">プロのヒント</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">検索</string>
+    <string name="cd_clear">検索をクリア</string>
+    <string name="cd_close">閉じる</string>
+    <string name="cd_info">詳細情報</string>
+    <string name="cd_back">戻る</string>
+    <string name="cd_add_favorite">お気に入りに追加</string>
+    <string name="cd_remove_favorite">お気に入りから削除</string>
+    <string name="cd_toggle_favorite">お気に入りを切り替え</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="other">%1$d 件の結果</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="other">%1$d シナリオ</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="other">%1$d 件保存済み</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">ポートレート</string>
+    <string name="category_landscapes_label">風景</string>
+    <string name="category_action_label">アクション・スポーツ</string>
+    <string name="category_night_label">夜景・天体</string>
+    <string name="category_events_label">イベント</string>
+    <string name="category_street_label">ストリート</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">絞り（f値）</string>
+    <string name="tooltip_aperture_body">被写界深度と光量を制御します。小さいf値（f/1.4）＝大きな開口部＝浅い被写界深度＋多くの光。大きいf値（f/16）＝小さな開口部＝深い被写界深度＋少ない光。</string>
+    <string name="tooltip_shutter_title">シャッタースピード</string>
+    <string name="tooltip_shutter_body">センサーが露出される時間。高速（1/1000秒）で動きを止めます。低速（1/30秒）でブレを表現します。手持ちで1/60秒以下だとカメラブレが生じます — 三脚を使用してください。</string>
+    <string name="tooltip_iso_title">ISO感度</string>
+    <string name="tooltip_iso_body">センサーの信号を増幅します。ISO 100 ＝ クリーン、ノイズなし。ISO 6400＋ ＝ 明るいがノイズ・粒子が出やすい。シーンが許す最低ISOを常に使用してください。</string>
+    <string name="tooltip_wb_title">ホワイトバランス</string>
+    <string name="tooltip_wb_body">白が中立に見えるよう色温度を調整します。「曇り」は画像を暖かくします（〜6500K）。「タングステン」は冷たくします（〜3200K）。RAW撮影なら後で変更できます。</string>
+    <string name="tooltip_focus_title">フォーカスモード</string>
+    <string name="tooltip_focus_body">ワンショットAF（AF-S）：半押しでフォーカスをロック — 静止した被写体に最適。コンティニュアスAF（AF-C）：動く被写体を継続的に追跡。マニュアル：フォーカスを正確に制御。</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">ゴールデンアワーのポートレート</string>
+    <string name="scenario_golden_hour_subtitle">日の出・日の入りの温かみのある光</string>
+    <string name="scenario_golden_hour_tip">被写体の後ろに太陽を置いて自然なリムライトを作ります。反射板を使って影を埋めましょう。</string>
+
+    <string name="scenario_indoor_natural_title">室内の自然光</string>
+    <string name="scenario_indoor_natural_subtitle">窓際のポートレートセッション</string>
+    <string name="scenario_indoor_natural_tip">被写体を窓から45°の位置に配置します（レンブラント照明）。きれいな色のために人工照明はすべて消しましょう。</string>
+
+    <string name="scenario_studio_portrait_title">スタジオポートレート</string>
+    <string name="scenario_studio_portrait_subtitle">コントロールされた照明設定</string>
+    <string name="scenario_studio_portrait_tip">フラッシュ同調速度以下でシャッタースピードを同期させます（通常1/200）。ISO 100 から始めてフラッシュ出力を調整しましょう。</string>
+
+    <string name="scenario_blue_hour_title">ブルーアワーの風景</string>
+    <string name="scenario_blue_hour_subtitle">日没後20〜40分の魔法の時間</string>
+    <string name="scenario_blue_hour_tip">三脚とリモートシャッターを使用します。タングステンWBは陰鬱な雰囲気のブルーキャストを強調します。</string>
+
+    <string name="scenario_waterfall_title">シルクのような滝</string>
+    <string name="scenario_waterfall_subtitle">長時間露光による水の流れ</string>
+    <string name="scenario_waterfall_tip">明るい状況ではNDフィルターを使用します。「綿菓子」のような効果は1〜2秒の露光で現れます。</string>
+
+    <string name="scenario_golden_landscape_title">ゴールデンアワーの風景</string>
+    <string name="scenario_golden_landscape_subtitle">地形に映える劇的な温かい光</string>
+    <string name="scenario_golden_landscape_tip">ゴールデンアワーの30分前に到着します。撮影場所を事前に下見しましょう — 光は数分で変わります。</string>
+
+    <string name="scenario_freeze_motion_title">高速な動きを止める</string>
+    <string name="scenario_freeze_motion_subtitle">シャープなアクションショット</string>
+    <string name="scenario_freeze_motion_tip">連写モードを使い、動く被写体を追いかけましょう。AIトラッキングAFは大きな違いをもたらします。</string>
+
+    <string name="scenario_panning_title">流し撮り</string>
+    <string name="scenario_panning_subtitle">被写体をシャープに背景をブラす</string>
+    <string name="scenario_panning_tip">被写体をなめらかに追いながら動きの途中でシャッターを切ります。練習が必要です — 連写で撮りましょう。</string>
+
+    <string name="scenario_sports_outdoor_title">屋外スポーツ</string>
+    <string name="scenario_sports_outdoor_subtitle">昼間のフィールド・コートスポーツ</string>
+    <string name="scenario_sports_outdoor_tip">太陽を背にして撮影できる位置を取ります。タイトなトリミングには長い望遠レンズ（200〜600mm）を使用します。</string>
+
+    <string name="scenario_milky_way_title">天の川</string>
+    <string name="scenario_milky_way_subtitle">晴れた夜の銀河の中心</string>
+    <string name="scenario_milky_way_tip">「500ルール」を使います — 500を焦点距離で割る ＝ スタートレイルが現れるまでの最大秒数。</string>
+
+    <string name="scenario_city_night_title">夜の街</string>
+    <string name="scenario_city_night_subtitle">都市夜景と光の軌跡</string>
+    <string name="scenario_city_night_tip">市民薄明を待ちましょう — 日没から約20分後、街明かりと青空が美しくバランスします。</string>
+
+    <string name="scenario_light_painting_title">ライトペインティング</string>
+    <string name="scenario_light_painting_subtitle">光のツールを使ったクリエイティブな長時間露光</string>
+    <string name="scenario_light_painting_tip">写真に写り込まないよう暗い服を着ましょう。細かい作業には小型のフラッシュライトを使用します。</string>
+
+    <string name="scenario_wedding_reception_title">ウェディングレセプション</string>
+    <string name="scenario_wedding_reception_subtitle">屋内の混合照明イベント</string>
+    <string name="scenario_wedding_reception_tip">フラッシュを天井にバウンスさせて自然な補助光を作ります。RAWで撮影 — 混合光はカメラ内での調整が困難です。</string>
+
+    <string name="scenario_concert_title">コンサート・ライブミュージック</string>
+    <string name="scenario_concert_subtitle">ステージ照明、動き回るパフォーマー</string>
+    <string name="scenario_concert_tip">多くの会場はカメラを最初の3曲のみ許可しています。サウンドチェック中に照明を確認しておきましょう。</string>
+
+    <string name="scenario_corporate_title">企業イベント</string>
+    <string name="scenario_corporate_subtitle">会議、ヘッドショット、パネル</string>
+    <string name="scenario_corporate_tip">画像を素早く納品 — クライアントはSNS投稿を当日必要とすることが多いです。現場で積極的に写真を選別しましょう。</string>
+
+    <string name="scenario_sunny_street_title">晴れた日のストリート</string>
+    <string name="scenario_sunny_street_subtitle">明るい昼の都市撮影</string>
+    <string name="scenario_sunny_street_tip">晴天の16ルール：晴天時にf/16でシャッタースピード ＝ 1/ISO。「ゾーンフォーカス」を使って腰だめで撮影しましょう。</string>
+
+    <string name="scenario_rainy_street_title">雨の日のストリート</string>
+    <string name="scenario_rainy_street_subtitle">反射と雰囲気ある濡れた風景</string>
+    <string name="scenario_rainy_street_tip">水たまりの反射を捉えるため低めのアングルで撮ります。曇りの光は自然に柔らかく、ストリートカラーに最適です。</string>
+
+    <string name="scenario_night_street_title">夜のストリート</string>
+    <string name="scenario_night_street_subtitle">ネオンサイン、バー、深夜の都市生活</string>
+    <string name="scenario_night_street_tip">粒子感を活かしましょう。夜の高ISO ノイズは映画的に見えます — ハイライトに露出を合わせ、シャドウは諦めましょう。</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">再試行</string>
+    <string name="error_load_failed">データを読み込めませんでした。もう一度お試しください。</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">絞り</string>
+    <string name="setting_shutter">シャッタースピード</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">ホワイトバランス</string>
+    <string name="setting_focus">フォーカスモード</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">曇り</string>
+    <string name="wb_daylight">太陽光</string>
+    <string name="wb_flash_5500k">フラッシュ / 5500K</string>
+    <string name="wb_tungsten_3200k">タングステン / 3200K</string>
+    <string name="wb_shade_7000k">日陰 / 7000K</string>
+    <string name="wb_auto">オート</string>
+    <string name="wb_auto_3500k">オート / 3500K</string>
+    <string name="wb_fluorescent_4200k">蛍光灯 / 4200K</string>
+    <string name="wb_tungsten_2700k">タングステン / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">ワンショットAF</string>
+    <string name="focus_manual_inf">マニュアル / ∞</string>
+    <string name="focus_manual">マニュアル</string>
+    <string name="focus_continuous_af">コンティニュアスAF</string>
+    <string name="focus_zone_pre">ゾーン / プリフォーカス</string>
+</resources>

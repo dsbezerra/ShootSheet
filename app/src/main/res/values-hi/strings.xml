@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">सीनेरियो लाइब्रेरी</string>
+    <string name="home_subtitle">हर स्थिति के लिए कैमरा सेटिंग्स</string>
+    <string name="search_placeholder">सीनेरियो खोजें\u2026</string>
+    <string name="section_categories">श्रेणियाँ</string>
+    <string name="search_no_results">\"%1$s\" के लिए कोई परिणाम नहीं</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">एक्सप्लोर</string>
+    <string name="tab_favorites">पसंदीदा</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">पसंदीदा</string>
+    <string name="favorites_empty_title">अभी कोई पसंदीदा नहीं</string>
+    <string name="favorites_empty_body">किसी भी चीट शीट पर \u2665 टैप करें और इसे यहाँ सेव करें ताकि फील्ड में जल्दी एक्सेस कर सकें।</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">श्रेणी</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">कैमरा सेटिंग्स</string>
+    <string name="detail_camera_settings_hint">अधिक जानने के लिए किसी भी सेटिंग पर टैप करें</string>
+    <string name="detail_pro_tip_label">प्रो टिप</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">खोजें</string>
+    <string name="cd_clear">खोज साफ़ करें</string>
+    <string name="cd_close">बंद करें</string>
+    <string name="cd_info">अधिक जानकारी</string>
+    <string name="cd_back">वापस जाएँ</string>
+    <string name="cd_add_favorite">पसंदीदा में जोड़ें</string>
+    <string name="cd_remove_favorite">पसंदीदा से हटाएँ</string>
+    <string name="cd_toggle_favorite">पसंदीदा टॉगल करें</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d परिणाम</item>
+        <item quantity="other">%1$d परिणाम</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="one">%1$d सीनेरियो</item>
+        <item quantity="other">%1$d सीनेरियो</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="one">%1$d सेव किया हुआ सीनेरियो</item>
+        <item quantity="other">%1$d सेव किए हुए सीनेरियो</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">पोर्ट्रेट</string>
+    <string name="category_landscapes_label">लैंडस्केप</string>
+    <string name="category_action_label">एक्शन और स्पोर्ट्स</string>
+    <string name="category_night_label">रात और एस्ट्रो</string>
+    <string name="category_events_label">इवेंट्स</string>
+    <string name="category_street_label">स्ट्रीट</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">अपर्चर (f-stop)</string>
+    <string name="tooltip_aperture_body">डेप्थ ऑफ फील्ड और प्रकाश को नियंत्रित करता है। छोटे f-नंबर (f/1.4) = चौड़ा खुलना = उथली फोकस + अधिक प्रकाश। बड़े नंबर (f/16) = छोटा खुलना = गहरी फोकस + कम प्रकाश।</string>
+    <string name="tooltip_shutter_title">शटर स्पीड</string>
+    <string name="tooltip_shutter_body">सेंसर कितनी देर तक एक्सपोज़ होता है। तेज़ स्पीड (1/1000s) मोशन फ्रीज़ करती है। धीमी स्पीड (1/30s) ब्लर बनाती है। 1/60s से कम हाथ में लेने पर कैमरा हिलता है — तिपाई का उपयोग करें।</string>
+    <string name="tooltip_iso_title">ISO सेंसिटिविटी</string>
+    <string name="tooltip_iso_body">सेंसर सिग्नल को बढ़ाता है। ISO 100 = साफ़, बिना शोर। ISO 6400+ = चमकीला लेकिन शोर/दानेदार। हमेशा सबसे कम ISO का उपयोग करें जो दृश्य अनुमति दे।</string>
+    <string name="tooltip_wb_title">व्हाइट बैलेंस</string>
+    <string name="tooltip_wb_body">सफेद रंग को न्यूट्रल दिखाने के लिए कलर टेम्परेचर को एडजस्ट करता है। \"बादल\" छवि को गर्म बनाता है (~6500K)। \"टंगस्टन\" ठंडा करता है (~3200K)। RAW में शूटिंग से बाद में बदला जा सकता है।</string>
+    <string name="tooltip_focus_title">फोकस मोड</string>
+    <string name="tooltip_focus_body">सिंगल AF (AF-S): हाफ-प्रेस पर फोकस लॉक करता है — स्थिर विषयों के लिए आदर्श। कंटीन्यूअस AF (AF-C): चलते हुए विषय को लगातार ट्रैक करता है। मैनुअल: आप फोकस सटीक रूप से नियंत्रित करते हैं।</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">गोल्डन आवर पोर्ट्रेट</string>
+    <string name="scenario_golden_hour_subtitle">सूर्योदय/सूर्यास्त पर गर्म, आकर्षक प्रकाश</string>
+    <string name="scenario_golden_hour_tip">प्राकृतिक रिम लाइट के लिए विषय को सूरज के साथ पीछे रखें। छाया भरने के लिए रिफ्लेक्टर का उपयोग करें।</string>
+
+    <string name="scenario_indoor_natural_title">इनडोर नैचुरल लाइट</string>
+    <string name="scenario_indoor_natural_subtitle">विंडो-लिट पोर्ट्रेट सेशन</string>
+    <string name="scenario_indoor_natural_tip">विषय को खिड़की से 45° पर रखें (रेम्ब्रांट लाइटिंग)। साफ रंग के लिए सभी कृत्रिम रोशनी बंद करें।</string>
+
+    <string name="scenario_studio_portrait_title">स्टूडियो पोर्ट्रेट</string>
+    <string name="scenario_studio_portrait_subtitle">नियंत्रित लाइटिंग सेटअप</string>
+    <string name="scenario_studio_portrait_tip">फ्लैश सिंक स्पीड से नीचे शटर सिंक करें (आमतौर पर 1/200)। ISO 100 से शुरू करें और फ्लैश पावर एडजस्ट करें।</string>
+
+    <string name="scenario_blue_hour_title">ब्लू आवर लैंडस्केप</string>
+    <string name="scenario_blue_hour_subtitle">सूर्यास्त के 20–40 मिनट बाद का जादू</string>
+    <string name="scenario_blue_hour_tip">तिपाई और रिमोट शटर का उपयोग करें। टंगस्टन WB मूडी लुक के लिए नीले रंग को बढ़ाता है।</string>
+
+    <string name="scenario_waterfall_title">सिल्की वाटरफॉल</string>
+    <string name="scenario_waterfall_subtitle">लॉन्ग एक्सपोज़र वाटर मोशन</string>
+    <string name="scenario_waterfall_tip">तेज़ रोशनी में ND फिल्टर का उपयोग करें। 1–2 सेकंड के एक्सपोज़र के आसपास \"कॉटन कैंडी\" लुक आता है।</string>
+
+    <string name="scenario_golden_landscape_title">गोल्डन आवर लैंडस्केप</string>
+    <string name="scenario_golden_landscape_subtitle">भूभाग पर नाटकीय गर्म रोशनी</string>
+    <string name="scenario_golden_landscape_tip">गोल्डन आवर से 30 मिनट पहले पहुँचें। पहले से स्थान देखें — रोशनी मिनटों में बदलती है।</string>
+
+    <string name="scenario_freeze_motion_title">तेज़ मोशन फ्रीज़ करें</string>
+    <string name="scenario_freeze_motion_subtitle">शार्प एक्शन शॉट्स</string>
+    <string name="scenario_freeze_motion_tip">बर्स्ट मोड का उपयोग करें और चलते विषयों के साथ पैन करें। AI ट्रैकिंग AF यहाँ बहुत बड़ा अंतर बनाता है।</string>
+
+    <string name="scenario_panning_title">मोशन ब्लर पैनिंग</string>
+    <string name="scenario_panning_subtitle">शार्प विषय के साथ स्पीड ब्लर</string>
+    <string name="scenario_panning_tip">विषय को धीरे से फॉलो करें और मध्य-स्विंग में शटर दबाएँ। अभ्यास की आवश्यकता है — बर्स्ट में शूट करें।</string>
+
+    <string name="scenario_sports_outdoor_title">आउटडोर स्पोर्ट्स</string>
+    <string name="scenario_sports_outdoor_subtitle">दिन के समय फील्ड और कोर्ट स्पोर्ट्स</string>
+    <string name="scenario_sports_outdoor_tip">सूर्य को पीछे रखकर शूट करने के लिए पोजीशन लें। टाइट क्रॉप के लिए लंबा लेंस (200–600mm) उपयोग करें।</string>
+
+    <string name="scenario_milky_way_title">मिल्की वे</string>
+    <string name="scenario_milky_way_subtitle">साफ रातों में गैलेक्सी का कोर</string>
+    <string name="scenario_milky_way_tip">\"500 नियम\" का उपयोग करें — 500 को फोकल लेंथ से विभाजित करें = स्टार ट्रेल्स दिखने से पहले अधिकतम सेकंड।</string>
+
+    <string name="scenario_city_night_title">रात में शहर</string>
+    <string name="scenario_city_night_subtitle">शहरी नाइटस्केप्स और लाइट ट्रेल्स</string>
+    <string name="scenario_city_night_tip">सिविल ट्वाइलाइट का इंतज़ार करें — सूर्यास्त के लगभग 20 मिनट बाद शहर की रोशनी और नीले आकाश का सुंदर संतुलन बनता है।</string>
+
+    <string name="scenario_light_painting_title">लाइट पेंटिंग</string>
+    <string name="scenario_light_painting_subtitle">लाइट टूल्स के साथ क्रिएटिव लॉन्ग एक्सपोज़र</string>
+    <string name="scenario_light_painting_tip">शॉट में न दिखने के लिए गहरे रंग के कपड़े पहनें। विस्तृत काम के लिए एक छोटी फ्लैशलाइट का उपयोग करें।</string>
+
+    <string name="scenario_wedding_reception_title">वेडिंग रिसेप्शन</string>
+    <string name="scenario_wedding_reception_subtitle">इनडोर मिक्स्ड लाइटिंग इवेंट्स</string>
+    <string name="scenario_wedding_reception_tip">नैचुरल-लुकिंग फिल के लिए छत पर फ्लैश बाउंस करें। RAW में शूट करें — मिक्स्ड लाइट को कैमरे में ठीक करना मुश्किल है।</string>
+
+    <string name="scenario_concert_title">कंसर्ट और लाइव म्यूजिक</string>
+    <string name="scenario_concert_subtitle">स्टेज लाइटिंग, तेज़ परफॉर्मर्स</string>
+    <string name="scenario_concert_tip">अधिकांश वेन्यू केवल पहले 3 गानों के लिए कैमरे की अनुमति देते हैं। साउंडचेक के दौरान लाइटिंग देखें।</string>
+
+    <string name="scenario_corporate_title">कॉर्पोरेट इवेंट्स</string>
+    <string name="scenario_corporate_subtitle">कॉन्फ्रेंस, हेडशॉट्स, पैनल</string>
+    <string name="scenario_corporate_tip">जल्दी इमेज डिलीवर करें — क्लाइंट्स को अक्सर उसी दिन सोशल पोस्ट चाहिए। फील्ड में आक्रामक तरीके से छाँटें।</string>
+
+    <string name="scenario_sunny_street_title">धूप वाले दिन स्ट्रीट</string>
+    <string name="scenario_sunny_street_subtitle">चमकदार शहरी दिन की रोशनी में शूटिंग</string>
+    <string name="scenario_sunny_street_tip">Sunny 16 नियम: धूप वाले दिन f/16 पर, शटर = 1/ISO। हिप से शूट करने के लिए \"ज़ोन फोकस\" का उपयोग करें।</string>
+
+    <string name="scenario_rainy_street_title">बारिश के दिन स्ट्रीट</string>
+    <string name="scenario_rainy_street_subtitle">रिफ्लेक्शन और मूडी गीले दृश्य</string>
+    <string name="scenario_rainy_street_tip">पोखरों में रिफ्लेक्शन कैप्चर करने के लिए नीचे शूट करें। बादल छाई रोशनी स्वाभाविक रूप से नरम होती है — स्ट्रीट कलर के लिए बढ़िया।</string>
+
+    <string name="scenario_night_street_title">रात में स्ट्रीट</string>
+    <string name="scenario_night_street_subtitle">नियॉन साइन्स, बार और देर रात का शहरी जीवन</string>
+    <string name="scenario_night_street_tip">ग्रेन को अपनाएँ। रात में हाई ISO नॉइज़ सिनेमाई लगती है — हाइलाइट्स के लिए एक्सपोज़ करें, शैडो के लिए नहीं।</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">पुनः प्रयास</string>
+    <string name="error_load_failed">डेटा लोड नहीं हो सका। कृपया पुनः प्रयास करें।</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">अपर्चर</string>
+    <string name="setting_shutter">शटर स्पीड</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">व्हाइट बैलेंस</string>
+    <string name="setting_focus">फोकस मोड</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">बादल</string>
+    <string name="wb_daylight">दिन की रोशनी</string>
+    <string name="wb_flash_5500k">फ्लैश / 5500K</string>
+    <string name="wb_tungsten_3200k">टंगस्टन / 3200K</string>
+    <string name="wb_shade_7000k">छाया / 7000K</string>
+    <string name="wb_auto">ऑटो</string>
+    <string name="wb_auto_3500k">ऑटो / 3500K</string>
+    <string name="wb_fluorescent_4200k">फ्लोरोसेंट / 4200K</string>
+    <string name="wb_tungsten_2700k">टंगस्टन / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">सिंगल AF</string>
+    <string name="focus_manual_inf">मैनुअल / ∞</string>
+    <string name="focus_manual">मैनुअल</string>
+    <string name="focus_continuous_af">कंटीन्यूअस AF</string>
+    <string name="focus_zone_pre">ज़ोन / प्री-फोकस</string>
+</resources>

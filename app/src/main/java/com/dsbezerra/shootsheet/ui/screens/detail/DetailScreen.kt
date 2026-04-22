@@ -18,13 +18,11 @@ package com.dsbezerra.shootsheet.ui.screens.detail
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.aspectRatio
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -33,9 +31,11 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -45,8 +45,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -54,10 +56,8 @@ import com.dsbezerra.shootsheet.R
 import com.dsbezerra.shootsheet.data.Category
 import com.dsbezerra.shootsheet.data.Scenario
 import com.dsbezerra.shootsheet.data.SettingKey
-import com.dsbezerra.shootsheet.ui.components.CameraLensViz
 import com.dsbezerra.shootsheet.ui.components.ScreenError
 import com.dsbezerra.shootsheet.ui.components.ScreenLoading
-import com.dsbezerra.shootsheet.ui.components.SettingChip
 import com.dsbezerra.shootsheet.ui.components.TooltipSheet
 import com.dsbezerra.shootsheet.ui.icons.ShootSheetIcons
 import com.dsbezerra.shootsheet.ui.theme.Accent
@@ -72,8 +72,6 @@ import com.dsbezerra.shootsheet.ui.theme.TextMuted
 import com.dsbezerra.shootsheet.ui.theme.TextPrimary
 import com.dsbezerra.shootsheet.ui.theme.TextSub
 import com.dsbezerra.shootsheet.ui.theme.spacing
-import com.dsbezerra.shootsheet.ui.utils.WindowWidthClass
-import com.dsbezerra.shootsheet.ui.utils.windowWidthClass
 
 // ── Route ─────────────────────────────────────────────────────────────────────
 // Owns the ViewModel, collects state/effects, bridges navigation to ShootSheetApp.
@@ -114,11 +112,9 @@ fun DetailScreen(
   val scenario = state.scenario ?: return
   val category = state.category ?: return
 
-  // Visual-only local state: drives lens highlight + tooltip overlay
+  // Visual-only local state: drives grid highlight + tooltip overlay
   var highlighted by remember { mutableStateOf<SettingKey?>(null) }
   var tooltip by remember { mutableStateOf<SettingKey?>(null) }
-
-  val isExpanded = windowWidthClass == WindowWidthClass.Expanded
 
   Box(modifier = modifier.fillMaxSize().background(Bg)) {
     if (state.isLoading) {
@@ -135,82 +131,27 @@ fun DetailScreen(
       )
       return
     }
-    if (isExpanded) {
-      // ── Two-pane layout (tablets / landscape) ─────────────────────────
-      Row(modifier = Modifier.fillMaxSize().statusBarsPadding()) {
-        // Left pane: camera lens centered
-        Column(
-          modifier = Modifier
-            .weight(1f)
-            .fillMaxHeight(),
-          horizontalAlignment = Alignment.CenterHorizontally,
-          verticalArrangement = Arrangement.Center,
-        ) {
-          val spacing = MaterialTheme.spacing
-          CameraLensViz(
-            settings = scenario.settings,
-            highlighted = highlighted,
-            modifier = Modifier
-              .fillMaxWidth()
-              .aspectRatio(1f)
-              .padding(spacing.screenHorizontal),
-          )
-        }
-        // Right pane: scrollable settings panel
-        Column(
-          modifier = Modifier
-            .weight(1f)
-            .fillMaxHeight()
-            .verticalScroll(rememberScrollState()),
-        ) {
-          DetailTopBar(
-            isFavorite = state.isFavorite,
-            onBack = { onEvent(DetailEvent.OnBackClick) },
-            onFavorite = { onEvent(DetailEvent.OnFavoriteClick) },
-          )
-          DetailContentPanel(
-            scenario = scenario,
-            category = category,
-            highlighted = highlighted,
-            onChipTap = { key ->
-              highlighted = key
-              tooltip = key
-            },
-          )
-        }
-      }
-    } else {
-      // ── Compact / Medium: vertical stack ──────────────────────────────
-      val spacing = MaterialTheme.spacing
-      Column(
-        modifier = Modifier
-          .fillMaxSize()
-          .verticalScroll(rememberScrollState())
-          .statusBarsPadding(),
-      ) {
-        DetailTopBar(
-          isFavorite = state.isFavorite,
-          onBack = { onEvent(DetailEvent.OnBackClick) },
-          onFavorite = { onEvent(DetailEvent.OnFavoriteClick) },
-        )
-        CameraLensViz(
-          settings = scenario.settings,
-          highlighted = highlighted,
-          modifier = Modifier
-            .fillMaxWidth()
-            .height(220.dp)
-            .padding(top = spacing.xs),
-        )
-        DetailContentPanel(
-          scenario = scenario,
-          category = category,
-          highlighted = highlighted,
-          onChipTap = { key ->
-            highlighted = key
-            tooltip = key
-          },
-        )
-      }
+
+    Column(
+      modifier = Modifier
+        .fillMaxSize()
+        .verticalScroll(rememberScrollState())
+        .statusBarsPadding(),
+    ) {
+      DetailTopBar(
+        isFavorite = state.isFavorite,
+        onBack = { onEvent(DetailEvent.OnBackClick) },
+        onFavorite = { onEvent(DetailEvent.OnFavoriteClick) },
+      )
+      DetailContentPanel(
+        scenario = scenario,
+        category = category,
+        highlighted = highlighted,
+        onChipTap = { key ->
+          highlighted = key
+          tooltip = key
+        },
+      )
     }
 
     // ── Tooltip overlay ─────────────────────────────────────────────────
@@ -307,11 +248,7 @@ private fun DetailContentPanel(
     Column(
       modifier = Modifier
         .padding(horizontal = spacing.screenHorizontal)
-        .padding(bottom = spacing.lg)
-        .clip(Shapes.card)
-        .background(Surface)
-        .border(1.dp, Border, Shapes.card)
-        .padding(spacing.screenHorizontal),
+        .padding(bottom = spacing.lg),
     ) {
       Text(
         text = stringResource(R.string.detail_camera_settings_title),
@@ -319,22 +256,11 @@ private fun DetailContentPanel(
         style = ShootSheetTextStyles.badgeLabel,
       )
       Spacer(Modifier.height(14.dp))
-
-      listOf(
-        SettingKey.APERTURE to scenario.settings.aperture,
-        SettingKey.SHUTTER to scenario.settings.shutter,
-        SettingKey.ISO to scenario.settings.iso,
-        SettingKey.WB to scenario.settings.getWb(context),
-        SettingKey.FOCUS to scenario.settings.getFocus(context),
-      ).forEach { (key, value) ->
-        SettingChip(
-          settingKey = key,
-          value = value,
-          highlighted = highlighted == key,
-          onTap = { onChipTap(key) },
-        )
-      }
-
+      SettingsGrid(
+        scenario = scenario,
+        highlighted = highlighted,
+        onTap = onChipTap,
+      )
       Spacer(Modifier.height(spacing.xs))
       Text(
         text = stringResource(R.string.detail_camera_settings_hint),
@@ -367,5 +293,99 @@ private fun DetailContentPanel(
         )
       }
     }
+  }
+}
+
+@Composable
+private fun SettingsGrid(
+  scenario: Scenario,
+  highlighted: SettingKey?,
+  onTap: (SettingKey) -> Unit,
+  modifier: Modifier = Modifier,
+) {
+  val context = LocalContext.current
+
+  Column(
+    modifier = modifier
+      .clip(Shapes.card)
+      .background(Surface)
+      .border(1.dp, Border, Shapes.card),
+  ) {
+    Row(modifier = Modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
+      SettingCell(
+        settingKey = SettingKey.APERTURE,
+        value = scenario.settings.aperture,
+        highlighted = highlighted == SettingKey.APERTURE,
+        onTap = { onTap(SettingKey.APERTURE) },
+        modifier = Modifier.weight(1f),
+      )
+      VerticalDivider(thickness = 1.dp, color = Border)
+      SettingCell(
+        settingKey = SettingKey.SHUTTER,
+        value = scenario.settings.shutter,
+        highlighted = highlighted == SettingKey.SHUTTER,
+        onTap = { onTap(SettingKey.SHUTTER) },
+        modifier = Modifier.weight(1f),
+      )
+      VerticalDivider(thickness = 1.dp, color = Border)
+      SettingCell(
+        settingKey = SettingKey.ISO,
+        value = scenario.settings.iso,
+        highlighted = highlighted == SettingKey.ISO,
+        onTap = { onTap(SettingKey.ISO) },
+        modifier = Modifier.weight(1f),
+      )
+    }
+    HorizontalDivider(thickness = 1.dp, color = Border)
+    Row(modifier = Modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
+      SettingCell(
+        settingKey = SettingKey.WB,
+        value = scenario.settings.getWb(context),
+        highlighted = highlighted == SettingKey.WB,
+        onTap = { onTap(SettingKey.WB) },
+        modifier = Modifier.weight(1f),
+      )
+      VerticalDivider(thickness = 1.dp, color = Border)
+      SettingCell(
+        settingKey = SettingKey.FOCUS,
+        value = scenario.settings.getFocus(context),
+        highlighted = highlighted == SettingKey.FOCUS,
+        onTap = { onTap(SettingKey.FOCUS) },
+        modifier = Modifier.weight(1f),
+      )
+    }
+  }
+}
+
+@Composable
+private fun SettingCell(
+  settingKey: SettingKey,
+  value: String,
+  highlighted: Boolean,
+  onTap: () -> Unit,
+  modifier: Modifier = Modifier,
+) {
+  val context = LocalContext.current
+
+  Column(
+    modifier = modifier
+      .background(if (highlighted) AccentDim else Color.Transparent)
+      .clickable(onClick = onTap)
+      .padding(horizontal = 12.dp, vertical = 14.dp),
+    horizontalAlignment = Alignment.CenterHorizontally,
+  ) {
+    Text(
+      text = value,
+      color = if (highlighted) Accent else TextPrimary,
+      style = ShootSheetTextStyles.settingValue,
+      textAlign = TextAlign.Center,
+    )
+    Spacer(Modifier.height(4.dp))
+    Text(
+      text = settingKey.getLabel(context).uppercase(),
+      color = TextMuted,
+      style = ShootSheetTextStyles.settingLabel,
+      textAlign = TextAlign.Center,
+    )
   }
 }

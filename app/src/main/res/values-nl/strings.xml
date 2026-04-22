@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Designed and developed by 2026 dsbezerra (Diego Bezerra)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- App -->
+    <string name="app_name">ShootSheet</string>
+    <string name="app_eyebrow">ShootSheet</string>
+
+    <!-- Home screen -->
+    <string name="home_title">Scenariobibliotheek</string>
+    <string name="home_subtitle">Camera-instellingen voor elke situatie</string>
+    <string name="search_placeholder">Zoek scenario\'s\u2026</string>
+    <string name="section_categories">Categorieën</string>
+    <string name="search_no_results">Geen resultaten voor \"%1$s\"</string>
+
+    <!-- Navigation tabs -->
+    <string name="tab_explore">Verkennen</string>
+    <string name="tab_favorites">Favorieten</string>
+
+    <!-- Favorites screen -->
+    <string name="favorites_title">Favorieten</string>
+    <string name="favorites_empty_title">Nog geen favorieten</string>
+    <string name="favorites_empty_body">Tik op het \u2665 op een spiekbriefje om het hier op te slaan voor snelle toegang in het veld.</string>
+
+    <!-- Scenario list screen -->
+    <string name="scenario_list_category_label">Categorie</string>
+
+    <!-- Detail screen -->
+    <string name="detail_camera_settings_title">Camera-instellingen</string>
+    <string name="detail_camera_settings_hint">Tik op een instelling voor meer informatie</string>
+    <string name="detail_pro_tip_label">PRO TIP</string>
+
+    <!-- Content descriptions (accessibility) -->
+    <string name="cd_search">Zoeken</string>
+    <string name="cd_clear">Zoekopdracht wissen</string>
+    <string name="cd_close">Sluiten</string>
+    <string name="cd_info">Meer informatie</string>
+    <string name="cd_back">Terug</string>
+    <string name="cd_add_favorite">Toevoegen aan favorieten</string>
+    <string name="cd_remove_favorite">Verwijderen uit favorieten</string>
+    <string name="cd_toggle_favorite">Favoriet schakelen</string>
+
+    <!-- Plural resources -->
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d resultaat</item>
+        <item quantity="other">%1$d resultaten</item>
+    </plurals>
+    <plurals name="category_scenario_count">
+        <item quantity="one">%1$d scenario</item>
+        <item quantity="other">%1$d scenario\'s</item>
+    </plurals>
+    <plurals name="favorites_saved_count">
+        <item quantity="one">%1$d opgeslagen scenario</item>
+        <item quantity="other">%1$d opgeslagen scenario\'s</item>
+    </plurals>
+
+    <!-- Categories -->
+    <string name="category_portraits_label">Portretten</string>
+    <string name="category_landscapes_label">Landschappen</string>
+    <string name="category_action_label">Actie en Sport</string>
+    <string name="category_night_label">Nacht en Astro</string>
+    <string name="category_events_label">Evenementen</string>
+    <string name="category_street_label">Straatfotografie</string>
+
+    <!-- Tooltips -->
+    <string name="tooltip_aperture_title">Diafragma (f-stop)</string>
+    <string name="tooltip_aperture_body">Bepaalt scherptediepte en lichtinval. Lage f-waarden (f/1.4) = wijd open = ondiepe focus + meer licht. Hoge waarden (f/16) = kleine opening = diepe focus + minder licht.</string>
+    <string name="tooltip_shutter_title">Sluitertijd</string>
+    <string name="tooltip_shutter_body">Hoe lang de sensor belicht wordt. Korte tijden (1/1000s) bevriezen beweging. Lange tijden (1/30s) creëren bewegingsonscherpte. Onder 1/60s handheld veroorzaakt camerabeweging — gebruik een statief.</string>
+    <string name="tooltip_iso_title">ISO-gevoeligheid</string>
+    <string name="tooltip_iso_body">Versterkt het sensorsignaal. ISO 100 = schoon, geen ruis. ISO 6400+ = helder maar ruisig/korrelig. Gebruik altijd de laagst mogelijke ISO die de scène toelaat.</string>
+    <string name="tooltip_wb_title">Witbalans</string>
+    <string name="tooltip_wb_body">Past de kleurtemperatuur aan zodat wit neutraal oogt. \"Bewolkt\" warmt het beeld op (~6500K). \"Gloeilamp\" koelt het af (~3200K). RAW-opnames kunnen later worden gewijzigd.</string>
+    <string name="tooltip_focus_title">Scherpstelmodus</string>
+    <string name="tooltip_focus_body">Enkelvoudige AF (AF-S): vergrendelt scherp bij half indrukken — ideaal voor stilstaande onderwerpen. Continue AF (AF-C): volgt een bewegend onderwerp continu. Handmatig: jij bedient de scherpstelling precies.</string>
+
+    <!-- Scenarios -->
+    <string name="scenario_golden_hour_title">Portretten tijdens het Gouden Uur</string>
+    <string name="scenario_golden_hour_subtitle">Warm, flatterend licht bij zonsop-/-ondergang</string>
+    <string name="scenario_golden_hour_tip">Positioneer het onderwerp met de zon erachter voor een natuurlijk randlicht. Gebruik een reflector om schaduwen op te vullen.</string>
+
+    <string name="scenario_indoor_natural_title">Natuurlijk Binnenlicht</string>
+    <string name="scenario_indoor_natural_subtitle">Portretstudio\'s met raamlicht</string>
+    <string name="scenario_indoor_natural_tip">Zet het onderwerp op 45° van het raam (Rembrandt-verlichting). Zet alle kunstlichten uit voor schone kleuren.</string>
+
+    <string name="scenario_studio_portrait_title">Studioportretten</string>
+    <string name="scenario_studio_portrait_subtitle">Gecontroleerde verlichtingsopstellingen</string>
+    <string name="scenario_studio_portrait_tip">Synchroniseer de sluitertijd onder de flitssynchronisatiesnelheid (doorgaans 1/200). Begin met ISO 100 en pas het flitsvermogen aan.</string>
+
+    <string name="scenario_blue_hour_title">Landschappen tijdens het Blauwe Uur</string>
+    <string name="scenario_blue_hour_subtitle">De magie van 20–40 min na zonsondergang</string>
+    <string name="scenario_blue_hour_tip">Gebruik een statief en afstandsbediening. Gloeilampen-witbalans versterkt de blauwe gloed voor een sfeervolle look.</string>
+
+    <string name="scenario_waterfall_title">Zijdezachte Watervallen</string>
+    <string name="scenario_waterfall_subtitle">Waterbeweging bij lange sluitertijd</string>
+    <string name="scenario_waterfall_tip">Gebruik een ND-filter bij fel licht. Het \"suikerspineffect\" verschijnt bij sluitertijden van 1–2 seconden.</string>
+
+    <string name="scenario_golden_landscape_title">Landschappen tijdens het Gouden Uur</string>
+    <string name="scenario_golden_landscape_subtitle">Dramatisch warm licht over het terrein</string>
+    <string name="scenario_golden_landscape_tip">Kom 30 minuten voor het gouden uur aan. Verken locaties vooraf — het licht verandert in minuten.</string>
+
+    <string name="scenario_freeze_motion_title">Snelle Beweging Bevriezen</string>
+    <string name="scenario_freeze_motion_subtitle">Scherpe actiefoto\'s</string>
+    <string name="scenario_freeze_motion_tip">Gebruik de burstmodus en volg bewegende onderwerpen. AI-tracking-AF maakt hier een enorm verschil.</string>
+
+    <string name="scenario_panning_title">Panning met Bewegingsonscherpte</string>
+    <string name="scenario_panning_subtitle">Snelheidswaas met scherp onderwerp</string>
+    <string name="scenario_panning_tip">Volg het onderwerp vloeiend en druk op de ontspanner midden in de beweging. Vergt oefening — fotografeer in burst.</string>
+
+    <string name="scenario_sports_outdoor_title">Buitensporten</string>
+    <string name="scenario_sports_outdoor_subtitle">Overdag veld- en baansporten</string>
+    <string name="scenario_sports_outdoor_tip">Positioneer jezelf om met de zon in de rug te fotograferen. Gebruik een lange telelens (200–600mm) voor strakke bijsnijdingen.</string>
+
+    <string name="scenario_milky_way_title">Melkweg</string>
+    <string name="scenario_milky_way_subtitle">De kern van de sterrenstelsel op heldere nachten</string>
+    <string name="scenario_milky_way_tip">Gebruik de \"500-regel\" — deel 500 door de brandpuntsafstand = maximaal aantal seconden voor sterrensporen verschijnen.</string>
+
+    <string name="scenario_city_night_title">Stad bij Nacht</string>
+    <string name="scenario_city_night_subtitle">Stedelijke nachtlandschappen en lichtsporen</string>
+    <string name="scenario_city_night_tip">Wacht op civiel schemerlicht — stadsverlichting en blauwe lucht zijn prachtig in evenwicht circa 20 minuten na zonsondergang.</string>
+
+    <string name="scenario_light_painting_title">Schilderen met Licht</string>
+    <string name="scenario_light_painting_subtitle">Creatieve lange sluitertijd met lichtbronnen</string>
+    <string name="scenario_light_painting_tip">Draag donkere kleding zodat je niet in de foto verschijnt. Gebruik een kleine zaklamp voor gedetailleerd werk.</string>
+
+    <string name="scenario_wedding_reception_title">Huwelijksreceptie</string>
+    <string name="scenario_wedding_reception_subtitle">Binnenactiviteiten met gemengde verlichting</string>
+    <string name="scenario_wedding_reception_tip">Stuit de flits van het plafond af voor een natuurlijk uitziende opvulling. Fotografeer in RAW — gemengd licht is moeilijk in de camera te corrigeren.</string>
+
+    <string name="scenario_concert_title">Concerten en Live Muziek</string>
+    <string name="scenario_concert_subtitle">Scèneverlichting, snelle performers</string>
+    <string name="scenario_concert_tip">De meeste venues staan camera\'s alleen toe tijdens de eerste 3 nummers. Bestudeer de verlichting tijdens de soundcheck.</string>
+
+    <string name="scenario_corporate_title">Zakelijke Evenementen</string>
+    <string name="scenario_corporate_subtitle">Conferenties, headshots, panels</string>
+    <string name="scenario_corporate_tip">Lever beelden snel — klanten hebben vaak dezelfde dag social media posts nodig. Selecteer aggressief in het veld.</string>
+
+    <string name="scenario_sunny_street_title">Straat op een Zonnige Dag</string>
+    <string name="scenario_sunny_street_subtitle">Heldere stedelijke daglichtfotografie</string>
+    <string name="scenario_sunny_street_tip">Sunny 16-regel: op een zonnige dag bij f/16 is sluitertijd = 1/ISO. Gebruik \"zonescherpstel\" om vanaf de heup te fotograferen.</string>
+
+    <string name="scenario_rainy_street_title">Straat op een Regenachtige Dag</string>
+    <string name="scenario_rainy_street_subtitle">Reflecties en sfeervolle natte scènes</string>
+    <string name="scenario_rainy_street_tip">Fotografeer laag om reflecties in plassen te vangen. Bewolkt licht is van nature zacht — geweldig voor straatkleuren.</string>
+
+    <string name="scenario_night_street_title">Straat bij Nacht</string>
+    <string name="scenario_night_street_subtitle">Neonreclames, bars en laat stedelijk leven</string>
+    <string name="scenario_night_street_tip">Omarm het korrelige beeld. Hoge ISO-ruis bij nacht voelt cinematografisch — belicht voor de hooglichten, niet de schaduwen.</string>
+
+    <!-- Actions / errors -->
+    <string name="action_retry">Opnieuw proberen</string>
+    <string name="error_load_failed">Gegevens konden niet worden geladen. Probeer het opnieuw.</string>
+
+    <!-- Settings -->
+    <string name="setting_aperture">Diafragma</string>
+    <string name="setting_shutter">Sluitertijd</string>
+    <string name="setting_iso">ISO</string>
+    <string name="setting_wb">Witbalans</string>
+    <string name="setting_focus">Scherpstelmodus</string>
+
+    <!-- WB -->
+    <string name="wb_cloudy">Bewolkt</string>
+    <string name="wb_daylight">Daglicht</string>
+    <string name="wb_flash_5500k">Flits / 5500K</string>
+    <string name="wb_tungsten_3200k">Gloeilamp / 3200K</string>
+    <string name="wb_shade_7000k">Schaduw / 7000K</string>
+    <string name="wb_auto">Auto</string>
+    <string name="wb_auto_3500k">Auto / 3500K</string>
+    <string name="wb_fluorescent_4200k">Tl-lamp / 4200K</string>
+    <string name="wb_tungsten_2700k">Gloeilamp / 2700K</string>
+
+    <!-- Focus -->
+    <string name="focus_single_af">Enkelvoudige AF</string>
+    <string name="focus_manual_inf">Handmatig / ∞</string>
+    <string name="focus_manual">Handmatig</string>
+    <string name="focus_continuous_af">Continue AF</string>
+    <string name="focus_zone_pre">Zone / Vooraf scherpstellen</string>
+</resources>
