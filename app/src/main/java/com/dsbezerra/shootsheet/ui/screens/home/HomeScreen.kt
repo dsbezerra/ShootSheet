@@ -47,6 +47,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -126,11 +127,18 @@ fun HomeScreen(
     modifier = modifier,
     topBar = {
       Column(modifier = Modifier.padding(horizontal = spacing.screenHorizontal, vertical = spacing.xxl)) {
-        Text(
-          text = stringResource(R.string.app_eyebrow),
-          color = Accent,
-          style = ShootSheetTextStyles.eyebrow,
-        )
+        Row {
+          Text(
+            text = "Shoot",
+            color = TextPrimary,
+            style = ShootSheetTextStyles.eyebrow.copy(fontWeight = FontWeight.Bold),
+          )
+          Text(
+            text = "Sheet",
+            color = Accent,
+            style = ShootSheetTextStyles.eyebrow.copy(fontWeight = FontWeight.Bold),
+          )
+        }
         Spacer(Modifier.height(spacing.sm))
         Text(
           text = stringResource(R.string.home_title),
